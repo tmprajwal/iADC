@@ -2,8 +2,8 @@
   Using e2v Dual 8-bit 1Gsps ADC, AT84AD001B, automatically adjust the register to minimize the offset, gain and delay mismatch
   Should be working on AT84AD001C as well
   Author: Prajwal Mohanmurthy (Hong Chen)
-		  prajwal@mohanmurthy.com
-		  MIT LNS
+		 prajwal@mohanmurthy.com
+		 MIT LNS
 '''
 
 Fs=2e9

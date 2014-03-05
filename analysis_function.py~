@@ -1,8 +1,9 @@
 '''
    functions to deal with data
- Author: Prajwal Mohanmurthy (Hong Chen)
-		 prajwal@mohanmurthy.com
-		 MIT LNS
+'''
+'''
+% Author: Hong Chen
+% Date: August 5,2010
 '''
 import corr,pylab,numpy,struct
 

@@ -1,7 +1,6 @@
 '''
- Author: Prajwal Mohanmurthy (Hong Chen)
-		 prajwal@mohanmurthy.com
-		 MIT LNS
+% Author: Hong Chen
+% Date: August 5,2010
 '''
 print '-------------------------------------'
 print 'Programming the bof file...'

@@ -1,6 +1,7 @@
 '''
-% Author: Hong Chen
-% Date: August 5,2010
+ Author: Prajwal Mohanmurthy (Hong Chen)
+		 prajwal@mohanmurthy.com
+		 MIT LNS
 '''
 import corr
 import struct

@@ -1,9 +1,8 @@
 '''
-  Connect to the ROACH board and run the design
-'''
-'''
-% Author: Hong Chen
-% Date: August 5,2010
+ Connect to the ROACH board and run the design
+ Author: Prajwal Mohanmurthy (Hong Chen)
+		 prajwal@mohanmurthy.com
+		 MIT LNS
 '''
 
 

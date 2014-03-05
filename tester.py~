@@ -1,9 +1,7 @@
 '''
-Author: Prajwal Mohanmurthy (Hong Chen)
-		prajwal@mohanmurthy.com
-		MIT LNS
+% Author: Hong Chen
+% Date: August 5,2010
 '''
-
 import corr
 import struct
 import time
@@ -11,8 +9,13 @@ import time
 from numpy import *
 from pylab import *
 
-
-def fft_out(channel):
+'''
+ basically the same as maker.py
+ but return the raw data as a long array rather
+ than write to a data file
+ no arguments required
+'''
+def tester():
 
   mask0=2**8-1
   mask1=mask0<<8
@@ -55,8 +58,16 @@ def fft_out(channel):
   # convert to signed integer: 8 bit
   for i in range(0,size(y)):
       if (y[i]>127):
-          y[i]=y[i]-256  
-  
+          y[i]=y[i]-256
+
+  '''
+  # write to file
+  datafile=open(name,'w')
+  for i in range(0,size(y)):
+     datafile.write(str(y[i])+'\n')
+  datafile.close()
+  '''
+  return y
 
   '''
   i = range(0,size(y))
@@ -69,34 +80,15 @@ def fft_out(channel):
   plot(y[1:100])
   show()
   '''
-  
   # FFT and plot
   # adc freq=1 GHz = 1000 MHz
-  Fs = 1000000000 # sampling frequency: 2 GHz
+  Fs = 2000000000 # sampling frequency: 2 GHz
   T = 1.0/Fs  # sample time
-  L = 4*(2**16)  # length of sample points
+  L = 8*(2**16)  # length of sample points
   nfft = L
-  if channel==0:
-     p = y[0:L:2]
-  elif channel==1:
-     p = y[1:L:2]
-  elif channel==2:
-     p = y
-     Fs=Fs*2
-     T=1.0/Fs
-     L=L*2
-     nfft=L
-  else:
-     print 'invalid argument(s)!'
-     return
-  k = fft(p,nfft)/L
+  k = fft(y,nfft)/L
   f = Fs/2*linspace(0.0,1.0,nfft/2+1)
 
-
-
-  return 2*abs(k[0:nfft/2+1])
-  
-  '''
   #print size(f)
   #print size(k)
   semilogy(f,2*abs(k[0:nfft/2+1])) 
@@ -104,9 +96,8 @@ def fft_out(channel):
   xlabel('frequency')
   ylabel('magnitude')
   show()
-  '''
 
-
+  #'''
 
 
 

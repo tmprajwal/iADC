@@ -1,8 +1,7 @@
 '''
  Functions to write to registers of iADC and adjust it
  Author: Prajwal Mohanmurthy (Hong Chen)
-		 prajwal@mohanmurthy.com
-		 MIT LNS
+ Date: July 23, 2010
 '''
 import corr,time
 
