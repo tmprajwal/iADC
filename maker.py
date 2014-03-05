@@ -4,9 +4,11 @@
 		 MIT LNS
 '''
 
-import corr
-import struct
-import time
+import corr,pylab,numpy,struct, time
+
+roach=corr.katcp_wrapper.FpgaClient('192.125.161.179',7147)
+time.sleep(0.001)   # wait for roach to connect
+roach.progdev('adc.bof')
 
 from numpy import *
 from pylab import *
