@@ -1,0 +1,116 @@
+'''
+% Author: Hong Chen
+% Date: August 5,2010
+'''
+
+import corr
+import struct
+import time
+
+from numpy import *
+from pylab import *
+
+
+
+
+
+'''
+    Trigger the snap64 block and capture 
+    data, then read it and get (2**16) 
+    64-bit unsigned numbers. Each of the 
+    unsigned numbers is concatnated by 8 
+    8-bit unsigned numbers. We need to 
+    split each long number and get the 
+    original data.
+    After the 8*(2**16) 8-bit signed number 
+    is recovered, write it to a file using 
+    argument 'name' as file name.
+'''
+def datafile_maker(name):
+
+  mask0=2**8-1
+  mask1=mask0<<8
+  mask2=mask1<<8
+  mask3=mask2<<8
+  divisor=float(2**7)
+
+  roach.write_int('snap64_ctrl',0)
+  roach.write_int('snap64_ctrl',7)
+  time.sleep(0.1)
+  roach.write_int('snap64_ctrl',0)
+
+
+
+
+  x = roach.read('snap64_bram_msb', 65536*4)
+  x1 = roach.read('snap64_bram_lsb',65536*4)
+  y0 = struct.unpack('>65536l', x)
+  y1 = struct.unpack('>65536l',x1)
+
+  # interleave part I
+  y=arange(0,size(y0)*8,1)
+  for i in range(0,size(y0)):
+     y[8*i]   = short((y0[i] & mask3) >> 24)
+     y[8*i+1] = short((y0[i] & mask2) >> 16)
+     y[8*i+2] = short((y0[i] & mask1) >> 8)
+     y[8*i+3] = short((y0[i] & mask0))
+
+
+
+
+  # interleave part II
+  for i in range(0,size(y0)):
+     y[8*i+4] = short((y1[i] & mask3) >> 24)
+     y[8*i+5] = short((y1[i] & mask2) >> 16)
+     y[8*i+6] = short((y1[i] & mask1) >> 8)
+     y[8*i+7] = short((y1[i] & mask0))
+
+
+  # convert to signed integer: 8 bit
+  for i in range(0,size(y)):
+      if (y[i]>127):
+          y[i]=y[i]-256
+
+  
+  # write to file
+  datafile=open(name,'w')
+  for i in range(0,size(y)):
+     datafile.write(str(y[i])+'\n')
+  datafile.close()
+  
+  
+
+  '''
+  i = range(0,size(y))
+  print size(y)
+  plot(i[0:1024/10],y[0:1024/10])
+  show()
+
+  '''
+  '''
+  plot(y[1:100])
+  show()
+  '''
+  '''
+  # FFT and plot
+  # adc freq=1 GHz = 1000 MHz
+  Fs = 2000000000 # sampling frequency: 2 GHz
+  T = 1.0/Fs  # sample time
+  L = 8*(2**16)  # length of sample points
+  nfft = L
+  k = fft(y,nfft)/L
+  f = Fs/2*linspace(0.0,1.0,nfft/2+1)
+
+  #print size(f)
+  #print size(k)
+  semilogy(f,2*abs(k[0:nfft/2+1])) 
+  title('interleaved ADCs on roach')
+  xlabel('frequency')
+  ylabel('magnitude')
+  show()
+
+  '''
+
+
+
+  # val=roach.read('iadc_controller',128)
