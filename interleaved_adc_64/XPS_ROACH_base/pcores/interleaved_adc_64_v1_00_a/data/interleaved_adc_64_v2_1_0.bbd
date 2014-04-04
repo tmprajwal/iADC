@@ -1,0 +1,11 @@
+#############################################################################
+##
+## IP Name  : interleaved_adc_64
+## Desc     : Automatically generated IP core wrapping a
+##            Simulink Xilinx System Generator netlist.
+##            Please do not modify by hand, this file will be erased
+##
+#############################################################################
+
+Files
+interleaved_adc_64.ngc

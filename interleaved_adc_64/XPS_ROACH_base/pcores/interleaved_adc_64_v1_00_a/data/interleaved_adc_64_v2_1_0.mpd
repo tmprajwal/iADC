@@ -1,0 +1,69 @@
+#############################################################################
+##
+## IP Name  : interleaved_adc_64
+## Desc     : Automatically generated IP core wrapping a
+##            Simulink Xilinx System Generator netlist.
+##            Please do not modify by hand, this file will be erased
+##
+#############################################################################
+
+BEGIN interleaved_adc_64
+
+###################
+# Generic Options #
+###################
+OPTION IPTYPE = IP
+OPTION STYLE  = BLACKBOX
+
+###################
+# Clock port      #
+###################
+PORT clk = "", DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+
+###################
+# Interfaces      #
+###################
+
+# interleaved_adc_64/XSG core config
+
+# interleaved_adc_64/adc
+PORT interleaved_adc_64_adc_user_data_valid = "", DIR = in
+PORT interleaved_adc_64_adc_user_datai0 = "", DIR = in, VEC = [7:0]
+PORT interleaved_adc_64_adc_user_datai1 = "", DIR = in, VEC = [7:0]
+PORT interleaved_adc_64_adc_user_datai2 = "", DIR = in, VEC = [7:0]
+PORT interleaved_adc_64_adc_user_datai3 = "", DIR = in, VEC = [7:0]
+PORT interleaved_adc_64_adc_user_dataq0 = "", DIR = in, VEC = [7:0]
+PORT interleaved_adc_64_adc_user_dataq1 = "", DIR = in, VEC = [7:0]
+PORT interleaved_adc_64_adc_user_dataq2 = "", DIR = in, VEC = [7:0]
+PORT interleaved_adc_64_adc_user_dataq3 = "", DIR = in, VEC = [7:0]
+PORT interleaved_adc_64_adc_user_outofrangei0 = "", DIR = in
+PORT interleaved_adc_64_adc_user_outofrangei1 = "", DIR = in
+PORT interleaved_adc_64_adc_user_outofrangeq0 = "", DIR = in
+PORT interleaved_adc_64_adc_user_outofrangeq1 = "", DIR = in
+PORT interleaved_adc_64_adc_user_sync0 = "", DIR = in
+PORT interleaved_adc_64_adc_user_sync1 = "", DIR = in
+PORT interleaved_adc_64_adc_user_sync2 = "", DIR = in
+PORT interleaved_adc_64_adc_user_sync3 = "", DIR = in
+
+# interleaved_adc_64/snap64/addr
+PORT interleaved_adc_64_snap64_addr_user_data_in = "", DIR = out, VEC = [31:0]
+
+# interleaved_adc_64/snap64/bram_lsb
+PORT interleaved_adc_64_snap64_bram_lsb_data_out = "", DIR = in, VEC = [31:0]
+PORT interleaved_adc_64_snap64_bram_lsb_addr = "", DIR = out, VEC = [14:0]
+PORT interleaved_adc_64_snap64_bram_lsb_data_in = "", DIR = out, VEC = [31:0]
+PORT interleaved_adc_64_snap64_bram_lsb_we = "", DIR = out
+
+# interleaved_adc_64/snap64/bram_msb
+PORT interleaved_adc_64_snap64_bram_msb_data_out = "", DIR = in, VEC = [31:0]
+PORT interleaved_adc_64_snap64_bram_msb_addr = "", DIR = out, VEC = [14:0]
+PORT interleaved_adc_64_snap64_bram_msb_data_in = "", DIR = out, VEC = [31:0]
+PORT interleaved_adc_64_snap64_bram_msb_we = "", DIR = out
+
+# interleaved_adc_64/snap64/ctrl
+PORT interleaved_adc_64_snap64_ctrl_user_data_out = "", DIR = in, VEC = [31:0]
+
+# interleaved_adc_64/trigger
+PORT interleaved_adc_64_trigger_user_data_out = "", DIR = in, VEC = [31:0]
+
+END

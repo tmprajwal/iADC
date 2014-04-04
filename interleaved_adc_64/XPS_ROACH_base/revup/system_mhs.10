@@ -1,0 +1,410 @@
+# ##############################################################################
+# Target Board:  ROACH v1.0
+# Family:	     virtex5
+# Device:	     xc5vlx110t
+# Package:	     ff1136
+# Speed Grade:	 -1
+# Processor:     None
+# System clock frequency: 100.000000 MHz
+# ##############################################################################
+
+
+PARAMETER VERSION = 2.1.0
+
+# Clock Ports
+PORT sys_clk_n   = sys_clk_n,   DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+PORT sys_clk_p   = sys_clk_p,   DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+PORT dly_clk_n   = dly_clk_n,   DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+PORT dly_clk_p   = dly_clk_p,   DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+PORT aux0_clk_n  = aux0_clk_n,  DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+PORT aux0_clk_p  = aux0_clk_p,  DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+PORT aux1_clk_n  = aux1_clk_n,  DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+PORT aux1_clk_p  = aux1_clk_p,  DIR = I, SIGIS = CLK, CLK_FREQ = 200000000
+
+# EPB Ports
+PORT epb_clk_in  = epb_clk_in,  DIR = I
+PORT epb_data    = epb_data,    DIR = IO, VEC = [15:0]
+PORT epb_addr    = epb_addr,    DIR = I,  VEC = [22:0]
+PORT epb_addr_gp = epb_addr_gp, DIR = I,  VEC =  [5:0]
+PORT epb_cs_n    = epb_cs_n,    DIR = I
+PORT epb_be_n    = epb_be_n,    DIR = I,  VEC =  [1:0]
+PORT epb_r_w_n   = epb_r_w_n,   DIR = I
+PORT epb_oe_n    = epb_oe_n,    DIR = I
+PORT epb_rdy     = epb_rdy,     DIR = O
+
+PORT ppc_irq_n   = ppc_irq_n,   DIR = O
+
+
+PORT adc0_adc3wire_clk = adc0_adc3wire_clk, DIR = O
+PORT adc0_adc3wire_data = adc0_adc3wire_data, DIR = O
+PORT adc0_adc3wire_strobe = adc0_adc3wire_strobe, DIR = O
+PORT adc0_modepin = adc0_modepin, DIR = O
+
+
+
+
+
+
+BEGIN roach_infrastructure
+  PARAMETER INSTANCE = infrastructure_inst
+  PARAMETER HW_VER   = 1.00.a
+  PARAMETER CLK_FREQ = 200
+  PORT sys_clk_n     = sys_clk_n
+  PORT sys_clk_p     = sys_clk_p
+  PORT dly_clk_n     = dly_clk_n
+  PORT dly_clk_p     = dly_clk_p
+  PORT aux0_clk_n    = aux0_clk_n
+  PORT aux0_clk_p    = aux0_clk_p
+  PORT aux1_clk_n    = aux1_clk_n
+  PORT aux1_clk_p    = aux1_clk_p
+  PORT epb_clk_in    = epb_clk_in
+  PORT sys_clk       = sys_clk
+  PORT sys_clk90     = sys_clk90
+  PORT sys_clk180    = sys_clk180
+  PORT sys_clk270    = sys_clk270
+  PORT sys_clk_lock  = sys_clk_lock
+  PORT sys_clk2x     = sys_clk2x
+  PORT sys_clk2x90   = sys_clk2x90
+  PORT sys_clk2x180  = sys_clk2x180
+  PORT sys_clk2x270  = sys_clk2x270
+  PORT dly_clk       = dly_clk
+  PORT aux0_clk      = aux0_clk
+  PORT aux0_clk90    = aux0_clk90
+  PORT aux0_clk180   = aux0_clk180
+  PORT aux0_clk270   = aux0_clk270
+  PORT aux1_clk      = aux1_clk
+  PORT aux1_clk90    = aux1_clk90
+  PORT aux1_clk180   = aux1_clk180
+  PORT aux1_clk270   = aux1_clk270
+  PORT aux0_clk2x    = aux0_clk2x
+  PORT aux0_clk2x90  = aux0_clk2x90
+  PORT aux0_clk2x180 = aux0_clk2x180
+  PORT aux0_clk2x270 = aux0_clk2x270
+  PORT epb_clk       = epb_clk
+  PORT idelay_rst    = power_on_rst
+  PORT idelay_rdy    = idelay_rdy
+  PORT op_power_on_rst  = power_on_rst
+END
+
+BEGIN reset_block
+  PARAMETER INSTANCE = reset_block_inst
+  PARAMETER HW_VER   = 1.00.a
+  PARAMETER WIDTH    = 1000
+  PORT clk           = epb_clk
+  PORT ip_async_reset_i = power_on_rst
+  PORT ip_reset_i       = power_on_rst
+  PORT op_reset_o       = sys_reset
+END
+
+BEGIN opb_v20
+  PARAMETER INSTANCE = opb0
+  PARAMETER HW_VER = 1.10.c
+  PARAMETER C_EXT_RESET_HIGH = 1
+  PARAMETER C_REG_GRANTS = 0
+  PORT SYS_Rst = power_on_rst
+  PORT OPB_Clk = epb_clk
+END
+
+BEGIN epb_opb_bridge
+  PARAMETER INSTANCE = epb_opb_bridge_inst
+  PARAMETER HW_VER   = 1.00.a
+  BUS_INTERFACE MOPB = opb0
+  PORT OPB_Clk       = epb_clk
+  PORT sys_reset     = power_on_rst
+  PORT epb_data_oe_n = epb_data_oe_n
+  PORT epb_cs_n      = epb_cs_n_int
+  PORT epb_oe_n      = epb_oe_n_int
+  PORT epb_r_w_n     = epb_r_w_n_int
+  PORT epb_be_n      = epb_be_n_int
+  PORT epb_addr      = epb_addr_int
+  PORT epb_addr_gp   = epb_addr_gp_int
+  PORT epb_data_i    = epb_data_i
+  PORT epb_data_o    = epb_data_o
+  PORT epb_rdy       = epb_rdy_buf
+  PORT epb_rdy_oe    = epb_rdy_oe
+END
+
+BEGIN epb_infrastructure
+  PARAMETER INSTANCE   = epb_infrastructure_inst
+  PARAMETER HW_VER     = 1.00.a
+
+  PORT epb_rdy_buf     = epb_rdy
+  PORT epb_rdy         = epb_rdy_buf
+  PORT epb_rdy_oe      = epb_rdy_oe
+  PORT epb_data_buf    = epb_data
+  PORT epb_data_oe_n_i = epb_data_oe_n
+  PORT epb_data_out_i  = epb_data_o
+  PORT epb_data_in_o   = epb_data_i
+  PORT epb_oe_n_buf    = epb_oe_n
+  PORT epb_oe_n        = epb_oe_n_int
+  PORT epb_cs_n_buf    = epb_cs_n
+  PORT epb_cs_n        = epb_cs_n_int
+  PORT epb_be_n_buf    = epb_be_n
+  PORT epb_be_n        = epb_be_n_int
+  PORT epb_r_w_n_buf   = epb_r_w_n
+  PORT epb_r_w_n       = epb_r_w_n_int
+  PORT epb_addr_buf    = epb_addr
+  PORT epb_addr        = epb_addr_int
+  PORT epb_addr_gp_buf = epb_addr_gp
+  PORT epb_addr_gp     = epb_addr_gp_int
+END
+
+BEGIN sys_block
+  PARAMETER INSTANCE = sys_block_inst
+  PARAMETER HW_VER = 1.00.a
+
+  PARAMETER BOARD_ID     = 0xB00B
+  PARAMETER REV_MAJOR    = 0x1
+  PARAMETER REV_MINOR    = 0x0
+  PARAMETER REV_RCS      = 0x0
+  PARAMETER RCS_UPTODATE = 0x0
+
+  PARAMETER C_BASEADDR   = 0x00000000
+  PARAMETER C_HIGHADDR   = 0x0000FFFF
+  BUS_INTERFACE SOPB = opb0
+
+  PORT OPB_Clk    = epb_clk
+  PORT soft_reset = soft_reset
+  PORT irq_n      = ppc_irq_n
+  PORT app_irq    = 0x0000
+
+  PORT fab_clk    = adc0_clk
+END
+
+BEGIN opb_adccontroller
+ PARAMETER INSTANCE     = opb_adccontroller_0
+ PARAMETER HW_VER       = 1.00.a
+ PARAMETER C_BASEADDR   = 0x00020000
+ PARAMETER C_HIGHADDR   = 0x0002ffff
+ PARAMETER AUTOCONFIG_0 = 1
+ PARAMETER AUTOCONFIG_1 = 1
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT adc0_adc3wire_clk = adc0_adc3wire_clk
+ PORT adc0_adc3wire_data = adc0_adc3wire_data
+ PORT adc0_adc3wire_strobe = adc0_adc3wire_strobe
+ PORT adc0_modepin = adc0_modepin
+ PORT adc0_ddrb = adc0_ddrb
+ PORT adc0_dcm_reset = adc0_dcm_reset
+ PORT adc0_psclk = adc0_psclk
+ PORT adc0_psen = adc0_psen
+ PORT adc0_psincdec = adc0_psincdec
+ PORT adc0_psdone = adc0_psdone
+ PORT adc0_clk = adc0_clk
+END
+
+
+##############################################
+# User XSG IP core                           #
+##############################################
+
+BEGIN interleaved_adc_64
+ PARAMETER INSTANCE = interleaved_adc_64_XSG_core_config
+ PARAMETER HW_VER = 1.00.a
+ PORT clk = adc0_clk
+ PORT interleaved_adc_64_adc_user_data_valid = interleaved_adc_64_adc_user_data_valid
+ PORT interleaved_adc_64_adc_user_datai0 = interleaved_adc_64_adc_user_datai0
+ PORT interleaved_adc_64_adc_user_datai1 = interleaved_adc_64_adc_user_datai1
+ PORT interleaved_adc_64_adc_user_datai2 = interleaved_adc_64_adc_user_datai2
+ PORT interleaved_adc_64_adc_user_datai3 = interleaved_adc_64_adc_user_datai3
+ PORT interleaved_adc_64_adc_user_dataq0 = interleaved_adc_64_adc_user_dataq0
+ PORT interleaved_adc_64_adc_user_dataq1 = interleaved_adc_64_adc_user_dataq1
+ PORT interleaved_adc_64_adc_user_dataq2 = interleaved_adc_64_adc_user_dataq2
+ PORT interleaved_adc_64_adc_user_dataq3 = interleaved_adc_64_adc_user_dataq3
+ PORT interleaved_adc_64_adc_user_outofrangei0 = interleaved_adc_64_adc_user_outofrangei0
+ PORT interleaved_adc_64_adc_user_outofrangei1 = interleaved_adc_64_adc_user_outofrangei1
+ PORT interleaved_adc_64_adc_user_outofrangeq0 = interleaved_adc_64_adc_user_outofrangeq0
+ PORT interleaved_adc_64_adc_user_outofrangeq1 = interleaved_adc_64_adc_user_outofrangeq1
+ PORT interleaved_adc_64_adc_user_sync0 = interleaved_adc_64_adc_user_sync0
+ PORT interleaved_adc_64_adc_user_sync1 = interleaved_adc_64_adc_user_sync1
+ PORT interleaved_adc_64_adc_user_sync2 = interleaved_adc_64_adc_user_sync2
+ PORT interleaved_adc_64_adc_user_sync3 = interleaved_adc_64_adc_user_sync3
+ PORT interleaved_adc_64_snap64_addr_user_data_in = interleaved_adc_64_snap64_addr_user_data_in
+ PORT interleaved_adc_64_snap64_bram_lsb_data_out = interleaved_adc_64_snap64_bram_lsb_data_out
+ PORT interleaved_adc_64_snap64_bram_lsb_addr = interleaved_adc_64_snap64_bram_lsb_addr
+ PORT interleaved_adc_64_snap64_bram_lsb_data_in = interleaved_adc_64_snap64_bram_lsb_data_in
+ PORT interleaved_adc_64_snap64_bram_lsb_we = interleaved_adc_64_snap64_bram_lsb_we
+ PORT interleaved_adc_64_snap64_bram_msb_data_out = interleaved_adc_64_snap64_bram_msb_data_out
+ PORT interleaved_adc_64_snap64_bram_msb_addr = interleaved_adc_64_snap64_bram_msb_addr
+ PORT interleaved_adc_64_snap64_bram_msb_data_in = interleaved_adc_64_snap64_bram_msb_data_in
+ PORT interleaved_adc_64_snap64_bram_msb_we = interleaved_adc_64_snap64_bram_msb_we
+ PORT interleaved_adc_64_snap64_ctrl_user_data_out = interleaved_adc_64_snap64_ctrl_user_data_out
+ PORT interleaved_adc_64_trigger_user_data_out = interleaved_adc_64_trigger_user_data_out
+END
+
+############################
+# Simulink interfaces      #
+############################
+
+# interleaved_adc_64/XSG core config
+
+
+# interleaved_adc_64/adc
+BEGIN adc_interface
+ PARAMETER INSTANCE = interleaved_adc_64_adc
+ PARAMETER HW_VER = 1.01.a
+ PORT user_data_valid = interleaved_adc_64_adc_user_data_valid
+ PORT user_datai0 = interleaved_adc_64_adc_user_datai0
+ PORT user_datai1 = interleaved_adc_64_adc_user_datai1
+ PORT user_datai2 = interleaved_adc_64_adc_user_datai2
+ PORT user_datai3 = interleaved_adc_64_adc_user_datai3
+ PORT user_dataq0 = interleaved_adc_64_adc_user_dataq0
+ PORT user_dataq1 = interleaved_adc_64_adc_user_dataq1
+ PORT user_dataq2 = interleaved_adc_64_adc_user_dataq2
+ PORT user_dataq3 = interleaved_adc_64_adc_user_dataq3
+ PORT user_outofrangei0 = interleaved_adc_64_adc_user_outofrangei0
+ PORT user_outofrangei1 = interleaved_adc_64_adc_user_outofrangei1
+ PORT user_outofrangeq0 = interleaved_adc_64_adc_user_outofrangeq0
+ PORT user_outofrangeq1 = interleaved_adc_64_adc_user_outofrangeq1
+ PORT user_sync0 = interleaved_adc_64_adc_user_sync0
+ PORT user_sync1 = interleaved_adc_64_adc_user_sync1
+ PORT user_sync2 = interleaved_adc_64_adc_user_sync2
+ PORT user_sync3 = interleaved_adc_64_adc_user_sync3
+ PORT adc_clk_p = adc0clk_p
+ PORT adc_clk_n = adc0clk_n
+ PORT adc_sync_p = adc0sync_p
+ PORT adc_sync_n = adc0sync_n
+ PORT adc_outofrangei_p = adc0outofrangei_p
+ PORT adc_outofrangei_n = adc0outofrangei_n
+ PORT adc_outofrangeq_p = adc0outofrangeq_p
+ PORT adc_outofrangeq_n = adc0outofrangeq_n
+ PORT adc_dataeveni_p = adc0dataeveni_p
+ PORT adc_dataeveni_n = adc0dataeveni_n
+ PORT adc_dataoddi_p = adc0dataoddi_p
+ PORT adc_dataoddi_n = adc0dataoddi_n
+ PORT adc_dataevenq_p = adc0dataevenq_p
+ PORT adc_dataevenq_n = adc0dataevenq_n
+ PORT adc_dataoddq_p = adc0dataoddq_p
+ PORT adc_dataoddq_n = adc0dataoddq_n
+ PORT adc_ddrb_p = adc0ddrb_p
+ PORT adc_ddrb_n = adc0ddrb_n
+ PORT ctrl_reset = adc0_ddrb
+ PORT ctrl_clk_in = adc0_clk
+ PORT ctrl_clk_out = adc0_clk
+ PORT ctrl_clk90_out = adc0_clk90
+ PORT ctrl_dcm_locked = adc0_dcm_locked
+ PORT dcm_reset = adc0_dcm_reset
+ PORT dcm_psdone = adc0_psdone
+ PORT ctrl_clk180_out = adc0_clk180
+ PORT ctrl_clk270_out = adc0_clk270
+ PORT dcm_psclk = adc0_psclk
+ PORT dcm_psen = adc0_psen
+ PORT dcm_psincdec = adc0_psincdec
+END
+PORT adc0clk_p = adc0clk_p, DIR = in, SIGIS = CLK, CLK_FREQ = 800000000
+PORT adc0clk_n = adc0clk_n, DIR = in, SIGIS = CLK, CLK_FREQ = 800000000
+PORT adc0sync_p = adc0sync_p, DIR = in
+PORT adc0sync_n = adc0sync_n, DIR = in
+PORT adc0outofrangei_p = adc0outofrangei_p, DIR = in
+PORT adc0outofrangei_n = adc0outofrangei_n, DIR = in
+PORT adc0outofrangeq_p = adc0outofrangeq_p, DIR = in
+PORT adc0outofrangeq_n = adc0outofrangeq_n, DIR = in
+PORT adc0dataeveni_p = adc0dataeveni_p, DIR = in, VEC = [7:0]
+PORT adc0dataeveni_n = adc0dataeveni_n, DIR = in, VEC = [7:0]
+PORT adc0dataoddi_p = adc0dataoddi_p, DIR = in, VEC = [7:0]
+PORT adc0dataoddi_n = adc0dataoddi_n, DIR = in, VEC = [7:0]
+PORT adc0dataevenq_p = adc0dataevenq_p, DIR = in, VEC = [7:0]
+PORT adc0dataevenq_n = adc0dataevenq_n, DIR = in, VEC = [7:0]
+PORT adc0dataoddq_p = adc0dataoddq_p, DIR = in, VEC = [7:0]
+PORT adc0dataoddq_n = adc0dataoddq_n, DIR = in, VEC = [7:0]
+PORT adc0ddrb_p = adc0ddrb_p, DIR = out
+PORT adc0ddrb_n = adc0ddrb_n, DIR = out
+
+# interleaved_adc_64/snap64/addr
+BEGIN opb_register_simulink2ppc
+ PARAMETER INSTANCE = interleaved_adc_64_snap64_addr
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01000000
+ PARAMETER C_HIGHADDR = 0x010000FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_in = interleaved_adc_64_snap64_addr_user_data_in
+ PORT user_clk = adc0_clk
+END
+
+# interleaved_adc_64/snap64/bram_lsb
+BEGIN bram_if
+ PARAMETER INSTANCE = interleaved_adc_64_snap64_bram_lsb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 15
+ BUS_INTERFACE PORTA = interleaved_adc_64_snap64_bram_lsb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = interleaved_adc_64_snap64_bram_lsb_addr    
+ PORT data_in  = interleaved_adc_64_snap64_bram_lsb_data_in 
+ PORT data_out = interleaved_adc_64_snap64_bram_lsb_data_out
+ PORT we       = interleaved_adc_64_snap64_bram_lsb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = interleaved_adc_64_snap64_bram_lsb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = interleaved_adc_64_snap64_bram_lsb_ramblk_porta
+ BUS_INTERFACE PORTB = interleaved_adc_64_snap64_bram_lsb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = interleaved_adc_64_snap64_bram_lsb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01020000
+ PARAMETER C_HIGHADDR = 0x0103FFFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE PORTA = interleaved_adc_64_snap64_bram_lsb_ramblk_portb
+END
+
+
+# interleaved_adc_64/snap64/bram_msb
+BEGIN bram_if
+ PARAMETER INSTANCE = interleaved_adc_64_snap64_bram_msb_ramif
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER ADDR_SIZE = 15
+ BUS_INTERFACE PORTA = interleaved_adc_64_snap64_bram_msb_ramblk_porta
+ PORT clk_in   = adc0_clk
+ PORT addr     = interleaved_adc_64_snap64_bram_msb_addr    
+ PORT data_in  = interleaved_adc_64_snap64_bram_msb_data_in 
+ PORT data_out = interleaved_adc_64_snap64_bram_msb_data_out
+ PORT we       = interleaved_adc_64_snap64_bram_msb_we      
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = interleaved_adc_64_snap64_bram_msb_ramblk
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = interleaved_adc_64_snap64_bram_msb_ramblk_porta
+ BUS_INTERFACE PORTB = interleaved_adc_64_snap64_bram_msb_ramblk_portb
+END
+
+BEGIN opb_bram_if_cntlr
+ PARAMETER INSTANCE = interleaved_adc_64_snap64_bram_msb
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_OPB_CLK_PERIOD_PS = 10000
+ PARAMETER C_BASEADDR = 0x01040000
+ PARAMETER C_HIGHADDR = 0x0105FFFF
+ BUS_INTERFACE SOPB = opb0
+ BUS_INTERFACE PORTA = interleaved_adc_64_snap64_bram_msb_ramblk_portb
+END
+
+
+# interleaved_adc_64/snap64/ctrl
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = interleaved_adc_64_snap64_ctrl
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01060000
+ PARAMETER C_HIGHADDR = 0x010600FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = interleaved_adc_64_snap64_ctrl_user_data_out
+ PORT user_clk = adc0_clk
+END
+
+# interleaved_adc_64/trigger
+BEGIN opb_register_ppc2simulink
+ PARAMETER INSTANCE = interleaved_adc_64_trigger
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x01060100
+ PARAMETER C_HIGHADDR = 0x010601FF
+ BUS_INTERFACE SOPB = opb0
+ PORT OPB_Clk = epb_clk
+ PORT user_data_out = interleaved_adc_64_trigger_user_data_out
+ PORT user_clk = adc0_clk
+END
+

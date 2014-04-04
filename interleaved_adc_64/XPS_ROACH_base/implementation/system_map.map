@@ -1,0 +1,967 @@
+Release 14.6 Map P.68d (lin64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -timing -detail -ol high -xe n -register_duplication -o
+system_map.ncd -w -pr b system.ngd system.pcf 
+Target Device  : xc5vsx95t
+Target Package : ff1136
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Thu Apr  3 22:48:59 2014
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:56 - Part 'xc5vsx95t' is not a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal epb_addr_gp<5> connected to top level port
+   epb_addr_gp<5> has been removed.
+WARNING:MapLib:701 - Signal epb_addr_gp<4> connected to top level port
+   epb_addr_gp<4> has been removed.
+WARNING:MapLib:701 - Signal epb_addr_gp<3> connected to top level port
+   epb_addr_gp<3> has been removed.
+WARNING:MapLib:701 - Signal adc0outofrangei_n connected to top level port
+   adc0outofrangei_n has been removed.
+WARNING:MapLib:701 - Signal adc0outofrangei_p connected to top level port
+   adc0outofrangei_p has been removed.
+WARNING:MapLib:701 - Signal adc0outofrangeq_n connected to top level port
+   adc0outofrangeq_n has been removed.
+WARNING:MapLib:701 - Signal adc0outofrangeq_p connected to top level port
+   adc0outofrangeq_p has been removed.
+WARNING:MapLib:701 - Signal adc0sync_n connected to top level port adc0sync_n
+   has been removed.
+WARNING:MapLib:701 - Signal adc0sync_p connected to top level port adc0sync_p
+   has been removed.
+WARNING:MapLib:701 - Signal aux0_clk_n connected to top level port aux0_clk_n
+   has been removed.
+WARNING:MapLib:701 - Signal aux0_clk_p connected to top level port aux0_clk_p
+   has been removed.
+WARNING:MapLib:701 - Signal aux1_clk_n connected to top level port aux1_clk_n
+   has been removed.
+WARNING:MapLib:701 - Signal aux1_clk_p connected to top level port aux1_clk_p
+   has been removed.
+WARNING:MapLib:41 - All members of TNM group
+   "infrastructure_inst_infrastructure_inst_sys_clk2x_int" have been optimized
+   out of the design.
+WARNING:MapLib:50 - The period specification
+   "TS_infrastructure_inst_infrastructure_inst_sys_clk2x_int" has been discarded
+   because the group "infrastructure_inst_infrastructure_inst_sys_clk2x_int" has
+   been optimized away.
+Writing file system_map.ngm...
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_0
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_0_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_0
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_0_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_1
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_1_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_1
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_1_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_10
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_10_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_10
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_10_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_11
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_11_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_11
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_11_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_12
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_12_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_12
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_12_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_13
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_13_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_13
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_13_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_14
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_14_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_14
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_14_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_15
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_15_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_15
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_15_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_16
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_16_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_16
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_16_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_17
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_17_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_17
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_17_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_18
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_18_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_18
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_18_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_19
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_19_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_19
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_19_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_2
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_2_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_2
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_2_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_20
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_20_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_20
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_20_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_21
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_21_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_21
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_21_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_22
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_22_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_22
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_22_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_23
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_23_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_23
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_23_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_24
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_24_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_24
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_24_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_25
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_25_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_25
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_25_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_26
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_26_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_26
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_26_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_27
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_27_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_27
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_27_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_28
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_28_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_28
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_28_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_29
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_29_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_29
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_29_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_3
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_3_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_3
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_3_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_30
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_30_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_30
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_30_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_31
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_31_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_31
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_31_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_4
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_4_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_4
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_4_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_5
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_5_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_5
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_5_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_6
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_6_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_6
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_6_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_7
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_7_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_7
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_7_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_8
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_8_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_8
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_8_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_9
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_9_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_9
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_
+   ramblk/ramb36_9_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_0
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_0_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_0
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_0_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_1
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_1_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_1
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_1_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_10
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_10_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_10
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_10_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_11
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_11_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_11
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_11_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_12
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_12_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_12
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_12_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_13
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_13_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_13
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_13_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_14
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_14_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_14
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_14_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_15
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_15_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_15
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_15_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_16
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_16_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_16
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_16_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_17
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_17_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_17
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_17_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_18
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_18_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_18
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_18_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_19
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_19_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_19
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_19_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_2
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_2_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_2
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_2_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_20
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_20_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_20
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_20_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_21
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_21_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_21
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_21_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_22
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_22_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_22
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_22_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_23
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_23_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_23
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_23_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_24
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_24_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_24
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_24_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_25
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_25_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_25
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_25_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_26
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_26_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_26
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_26_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_27
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_27_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_27
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_27_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_28
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_28_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_28
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_28_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_29
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_29_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_29
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_29_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_3
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_3_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_3
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_3_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_30
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_30_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_30
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_30_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_31
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_31_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_31
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_31_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_4
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_4_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_4
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_4_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_5
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_5_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_5
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_5_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_6
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_6_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_6
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_6_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_7
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_7_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_7
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_7_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_8
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_8_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_8
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_8_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_9
+   of frag REGCLKBU connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_9_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_9
+   of frag REGCLKBL connected to power/ground net
+   interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_
+   ramblk/ramb36_9_REGCLKBL_tiesig
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 16 secs 
+Total CPU  time at the beginning of Placer: 16 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:6deb56a7) REAL time: 18 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:6deb56a7) REAL time: 18 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:df35730f) REAL time: 18 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:df35730f) REAL time: 18 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:df35730f) REAL time: 22 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:df35730f) REAL time: 22 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+
+Phase 7.2  Initial Clock and IO Placement (Checksum:2326976b) REAL time: 22 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:2326976b) REAL time: 22 secs 
+
+Phase 9.30  Global Clock Region Assignment
+Phase 9.30  Global Clock Region Assignment (Checksum:2326976b) REAL time: 22 secs 
+
+Phase 10.3  Local Placement Optimization
+Phase 10.3  Local Placement Optimization (Checksum:2326976b) REAL time: 22 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:2326976b) REAL time: 22 secs 
+
+Phase 12.8  Global Placement
+.......................................................
+............................................................
+...................................................................................
+..........................................................
+.....................................
+......................................................................................
+Phase 12.8  Global Placement (Checksum:34092e2d) REAL time: 26 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:34092e2d) REAL time: 26 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:34092e2d) REAL time: 27 secs 
+
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:6af3210) REAL time: 3 mins 38 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:6af3210) REAL time: 3 mins 38 secs 
+
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:6af3210) REAL time: 3 mins 38 secs 
+
+Total REAL time to Placer completion: 3 mins 38 secs 
+Total CPU  time to Placer completion: 3 mins 37 secs 
+Running physical synthesis...
+
+Physical synthesis completed.
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:367 - The signal <infrastructure_inst/dly_clk> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  144
+Slice Logic Utilization:
+  Number of Slice Registers:                   899 out of  58,880    1%
+    Number used as Flip Flops:                 899
+  Number of Slice LUTs:                      1,164 out of  58,880    1%
+    Number used as logic:                    1,054 out of  58,880    1%
+      Number using O6 output only:             957
+      Number using O5 output only:              47
+      Number using O5 and O6:                   50
+    Number used as Memory:                     107 out of  24,320    1%
+      Number used as Dual Port RAM:             96
+        Number using O6 output only:            32
+        Number using O5 output only:            32
+        Number using O5 and O6:                 32
+      Number used as Shift Register:            11
+        Number using O6 output only:            11
+    Number used as exclusive route-thru:         3
+  Number of route-thrus:                        49
+    Number using O6 output only:                49
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   578 out of  14,720    3%
+  Number of LUT Flip Flop pairs used:        1,441
+    Number with an unused Flip Flop:           542 out of   1,441   37%
+    Number with an unused LUT:                 277 out of   1,441   19%
+    Number of fully used LUT-FF pairs:         622 out of   1,441   43%
+    Number of unique control sets:              62
+    Number of slice register sites lost
+      to control set restrictions:             114 out of  58,880    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       126 out of     640   19%
+    Number of LOCed IOBs:                      126 out of     126  100%
+    IOB Flip Flops:                             97
+    IOB Master Pads:                             1
+    IOB Slave Pads:                              1
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      64 out of     244   26%
+    Number using BlockRAM only:                 64
+    Total primitives used:
+      Number of 36k BlockRAM used:              64
+    Total Memory used (KB):                  2,304 out of   8,784   26%
+  Number of BUFG/BUFGCTRLs:                      4 out of      32   12%
+    Number used as BUFGs:                        4
+  Number of DCM_ADVs:                            3 out of      12   25%
+
+Average Fanout of Non-Clock Nets:                6.35
+
+Peak Memory Usage:  1105 MB
+Total REAL time to MAP completion:  3 mins 44 secs 
+Total CPU time to MAP completion:   3 mins 43 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.

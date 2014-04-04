@@ -1,0 +1,2209 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu Apr 03 22:52:42 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "epb_be_n<0>" LOCATE = SITE "AF14" LEVEL 1;
+COMP "epb_be_n<1>" LOCATE = SITE "AF18" LEVEL 1;
+COMP "epb_addr<0>" LOCATE = SITE "AE23" LEVEL 1;
+COMP "epb_addr<1>" LOCATE = SITE "AE22" LEVEL 1;
+COMP "epb_addr<2>" LOCATE = SITE "AG18" LEVEL 1;
+COMP "epb_addr<3>" LOCATE = SITE "AG12" LEVEL 1;
+COMP "epb_addr<4>" LOCATE = SITE "AG15" LEVEL 1;
+COMP "epb_addr<5>" LOCATE = SITE "AG23" LEVEL 1;
+COMP "epb_addr<6>" LOCATE = SITE "AF19" LEVEL 1;
+COMP "epb_addr<7>" LOCATE = SITE "AE12" LEVEL 1;
+COMP "epb_addr<8>" LOCATE = SITE "AG16" LEVEL 1;
+COMP "epb_addr<9>" LOCATE = SITE "AF13" LEVEL 1;
+COMP "epb_data<0>" LOCATE = SITE "AF15" LEVEL 1;
+COMP "epb_data<1>" LOCATE = SITE "AE16" LEVEL 1;
+COMP "epb_data<2>" LOCATE = SITE "AE21" LEVEL 1;
+COMP "epb_data<3>" LOCATE = SITE "AD20" LEVEL 1;
+COMP "epb_data<4>" LOCATE = SITE "AF16" LEVEL 1;
+COMP "epb_addr<10>" LOCATE = SITE "AG20" LEVEL 1;
+COMP "epb_data<5>" LOCATE = SITE "AE17" LEVEL 1;
+COMP "epb_addr<11>" LOCATE = SITE "AF23" LEVEL 1;
+COMP "epb_data<6>" LOCATE = SITE "AE19" LEVEL 1;
+COMP "epb_addr<20>" LOCATE = SITE "K21" LEVEL 1;
+COMP "epb_addr<12>" LOCATE = SITE "AH17" LEVEL 1;
+COMP "epb_data<7>" LOCATE = SITE "AD19" LEVEL 1;
+COMP "epb_addr<21>" LOCATE = SITE "K16" LEVEL 1;
+COMP "epb_addr<13>" LOCATE = SITE "AH15" LEVEL 1;
+COMP "epb_data<8>" LOCATE = SITE "AG22" LEVEL 1;
+COMP "epb_addr<22>" LOCATE = SITE "J15" LEVEL 1;
+COMP "epb_addr<14>" LOCATE = SITE "L20" LEVEL 1;
+COMP "epb_data<9>" LOCATE = SITE "AH22" LEVEL 1;
+COMP "epb_addr<15>" LOCATE = SITE "J22" LEVEL 1;
+COMP "epb_addr<16>" LOCATE = SITE "H22" LEVEL 1;
+COMP "epb_addr<17>" LOCATE = SITE "L15" LEVEL 1;
+COMP "epb_addr<18>" LOCATE = SITE "L16" LEVEL 1;
+COMP "epb_addr<19>" LOCATE = SITE "K22" LEVEL 1;
+COMP "adc0dataoddi_n<0>" LOCATE = SITE "M27" LEVEL 1;
+COMP "adc0dataoddi_n<1>" LOCATE = SITE "L26" LEVEL 1;
+COMP "adc0dataoddi_n<2>" LOCATE = SITE "F34" LEVEL 1;
+COMP "adc0dataoddi_n<3>" LOCATE = SITE "H24" LEVEL 1;
+COMP "adc0dataoddi_n<4>" LOCATE = SITE "M30" LEVEL 1;
+COMP "adc0dataoddi_n<5>" LOCATE = SITE "J34" LEVEL 1;
+COMP "adc0dataoddi_n<6>" LOCATE = SITE "H32" LEVEL 1;
+COMP "adc0dataoddi_n<7>" LOCATE = SITE "E33" LEVEL 1;
+COMP "adc0dataoddi_p<0>" LOCATE = SITE "N27" LEVEL 1;
+COMP "adc0dataoddi_p<1>" LOCATE = SITE "L25" LEVEL 1;
+COMP "adc0dataoddi_p<2>" LOCATE = SITE "G33" LEVEL 1;
+COMP "adc0dataoddi_p<3>" LOCATE = SITE "H25" LEVEL 1;
+COMP "adc0dataoddi_p<4>" LOCATE = SITE "L30" LEVEL 1;
+COMP "adc0dataoddi_p<5>" LOCATE = SITE "H34" LEVEL 1;
+COMP "adc0dataoddi_p<6>" LOCATE = SITE "G32" LEVEL 1;
+COMP "adc0dataoddi_p<7>" LOCATE = SITE "E32" LEVEL 1;
+COMP "epb_data<10>" LOCATE = SITE "AH12" LEVEL 1;
+COMP "epb_data<11>" LOCATE = SITE "AG13" LEVEL 1;
+COMP "epb_data<12>" LOCATE = SITE "AH20" LEVEL 1;
+COMP "epb_data<13>" LOCATE = SITE "AH19" LEVEL 1;
+COMP "epb_data<14>" LOCATE = SITE "AH14" LEVEL 1;
+COMP "epb_data<15>" LOCATE = SITE "AH13" LEVEL 1;
+COMP "adc0dataoddq_n<0>" LOCATE = SITE "E31" LEVEL 1;
+COMP "adc0dataoddq_n<1>" LOCATE = SITE "J29" LEVEL 1;
+COMP "adc0dataoddq_n<2>" LOCATE = SITE "L28" LEVEL 1;
+COMP "adc0dataoddq_n<3>" LOCATE = SITE "N28" LEVEL 1;
+COMP "adc0dataoddq_n<4>" LOCATE = SITE "G26" LEVEL 1;
+COMP "adc0dataoddq_n<5>" LOCATE = SITE "J25" LEVEL 1;
+COMP "adc0dataoddq_n<6>" LOCATE = SITE "K26" LEVEL 1;
+COMP "adc0dataoddq_n<7>" LOCATE = SITE "K32" LEVEL 1;
+COMP "adc0dataoddq_p<0>" LOCATE = SITE "F31" LEVEL 1;
+COMP "adc0dataoddq_p<1>" LOCATE = SITE "H29" LEVEL 1;
+COMP "adc0dataoddq_p<2>" LOCATE = SITE "K28" LEVEL 1;
+COMP "adc0dataoddq_p<3>" LOCATE = SITE "M28" LEVEL 1;
+COMP "adc0dataoddq_p<4>" LOCATE = SITE "G25" LEVEL 1;
+COMP "adc0dataoddq_p<5>" LOCATE = SITE "J24" LEVEL 1;
+COMP "adc0dataoddq_p<6>" LOCATE = SITE "K27" LEVEL 1;
+COMP "adc0dataoddq_p<7>" LOCATE = SITE "K33" LEVEL 1;
+COMP "adc0dataeveni_n<0>" LOCATE = SITE "K29" LEVEL 1;
+COMP "adc0dataeveni_n<1>" LOCATE = SITE "J31" LEVEL 1;
+COMP "adc0dataeveni_n<2>" LOCATE = SITE "F30" LEVEL 1;
+COMP "adc0dataeveni_n<3>" LOCATE = SITE "F29" LEVEL 1;
+COMP "adc0dataeveni_n<4>" LOCATE = SITE "L31" LEVEL 1;
+COMP "adc0dataeveni_n<5>" LOCATE = SITE "J26" LEVEL 1;
+COMP "adc0dataeveni_n<6>" LOCATE = SITE "E34" LEVEL 1;
+COMP "adc0dataeveni_n<7>" LOCATE = SITE "F26" LEVEL 1;
+COMP "adc0dataeveni_p<0>" LOCATE = SITE "L29" LEVEL 1;
+COMP "adc0dataeveni_p<1>" LOCATE = SITE "J30" LEVEL 1;
+COMP "adc0dataeveni_p<2>" LOCATE = SITE "G30" LEVEL 1;
+COMP "adc0dataeveni_p<3>" LOCATE = SITE "E29" LEVEL 1;
+COMP "adc0dataeveni_p<4>" LOCATE = SITE "K31" LEVEL 1;
+COMP "adc0dataeveni_p<5>" LOCATE = SITE "J27" LEVEL 1;
+COMP "adc0dataeveni_p<6>" LOCATE = SITE "F33" LEVEL 1;
+COMP "adc0dataeveni_p<7>" LOCATE = SITE "F25" LEVEL 1;
+COMP "adc0dataevenq_n<0>" LOCATE = SITE "G28" LEVEL 1;
+COMP "adc0dataevenq_n<1>" LOCATE = SITE "L24" LEVEL 1;
+COMP "adc0dataevenq_n<2>" LOCATE = SITE "M26" LEVEL 1;
+COMP "adc0dataevenq_n<3>" LOCATE = SITE "N30" LEVEL 1;
+COMP "adc0dataevenq_n<4>" LOCATE = SITE "H27" LEVEL 1;
+COMP "adc0dataevenq_n<5>" LOCATE = SITE "G31" LEVEL 1;
+COMP "adc0dataevenq_n<6>" LOCATE = SITE "H33" LEVEL 1;
+COMP "adc0dataevenq_n<7>" LOCATE = SITE "K34" LEVEL 1;
+COMP "adc0dataevenq_p<0>" LOCATE = SITE "H28" LEVEL 1;
+COMP "adc0dataevenq_p<1>" LOCATE = SITE "K24" LEVEL 1;
+COMP "adc0dataevenq_p<2>" LOCATE = SITE "M25" LEVEL 1;
+COMP "adc0dataevenq_p<3>" LOCATE = SITE "M31" LEVEL 1;
+COMP "adc0dataevenq_p<4>" LOCATE = SITE "G27" LEVEL 1;
+COMP "adc0dataevenq_p<5>" LOCATE = SITE "H30" LEVEL 1;
+COMP "adc0dataevenq_p<6>" LOCATE = SITE "J32" LEVEL 1;
+COMP "adc0dataevenq_p<7>" LOCATE = SITE "L34" LEVEL 1;
+COMP "epb_r_w_n" LOCATE = SITE "AF20" LEVEL 1;
+COMP "adc0_adc3wire_clk" LOCATE = SITE "F28" LEVEL 1;
+COMP "epb_rdy" LOCATE = SITE "K12" LEVEL 1;
+COMP "dly_clk_n" LOCATE = SITE "J17" LEVEL 1;
+COMP "dly_clk_p" LOCATE = SITE "J16" LEVEL 1;
+COMP "epb_addr_gp<0>" LOCATE = SITE "L21" LEVEL 1;
+COMP "epb_addr_gp<1>" LOCATE = SITE "G22" LEVEL 1;
+COMP "epb_addr_gp<2>" LOCATE = SITE "K23" LEVEL 1;
+COMP "adc0_adc3wire_strobe" LOCATE = SITE "C32" LEVEL 1;
+COMP "epb_clk_in" LOCATE = SITE "AH18" LEVEL 1;
+COMP "ppc_irq_n" LOCATE = SITE "G23" LEVEL 1;
+COMP "adc0_adc3wire_data" LOCATE = SITE "D32" LEVEL 1;
+COMP "epb_cs_n" LOCATE = SITE "K13" LEVEL 1;
+COMP "epb_oe_n" LOCATE = SITE "AF21" LEVEL 1;
+COMP "adc0ddrb_n" LOCATE = SITE "A33" LEVEL 1;
+COMP "adc0ddrb_p" LOCATE = SITE "B32" LEVEL 1;
+COMP "sys_clk_n" LOCATE = SITE "H13" LEVEL 1;
+COMP "sys_clk_p" LOCATE = SITE "J14" LEVEL 1;
+COMP "adc0clk_n" LOCATE = SITE "H20" LEVEL 1;
+COMP "adc0clk_p" LOCATE = SITE "H19" LEVEL 1;
+COMP "adc0_modepin" LOCATE = SITE "E28" LEVEL 1;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8"
+        PINNAME CLKBU;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9_pins<64>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9"
+        PINNAME CLKBL;
+PIN
+        interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9_pins<65>
+        = BEL
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9"
+        PINNAME CLKBU;
+PIN interleaved_adc_64_adc/interleaved_adc_64_adc/CLKSHIFT_DCM_pins<29> = BEL
+        "interleaved_adc_64_adc/interleaved_adc_64_adc/CLKSHIFT_DCM" PINNAME
+        PSCLK;
+TIMEGRP infrastructure_inst_infrastructure_inst_epb_clk_dcm = PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9_pins<65>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9_pins<64>"
+        PIN
+        "interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9_pins<65>"
+        BEL "infrastructure_inst/infrastructure_inst/bufg_epb" BEL
+        "opb0/opb0/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/OPB_timeout"
+        BEL
+        "opb0/opb0/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/timeout_cnt_3"
+        BEL
+        "opb0/opb0/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/timeout_cnt_2"
+        BEL
+        "opb0/opb0/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/timeout_cnt_1"
+        BEL
+        "opb0/opb0/OPB_ARBITER_I/OPB_ARBITER_CORE_I/WATCHDOG_TIMER_I/timeout_cnt_0"
+        BEL "opb0/opb0/POR_FF_I" BEL "opb0/opb0/POR_SRL_I/SRL16E" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_rdy_reg" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_cs_n_reg" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_oe_n_reg" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_r_w_n_reg" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_be_n_reg_0" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_be_n_reg_1" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_0" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_1" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_2" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_3" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_4" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_5" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_6" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_7" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_8" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_9" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_10" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_11" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_12" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_13" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_14" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_15" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_16" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_17" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_18" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_19" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_20" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_21" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_reg_22" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_gp_reg_0" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_gp_reg_1" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_addr_gp_reg_2" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_0" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_1" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_2" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_3" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_4" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_5" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_6" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_7" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_8" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_9" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_10" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_11" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_12" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_13" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_14" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_i_reg_15" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/M_select_reg" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_0" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_1" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_2" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_3" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_4" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_5" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_6" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_7" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_8" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_9" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_10" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_11" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_12" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_13" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_14" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_reg_15" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_0" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_1" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_2" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_3" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_4" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_5" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_6" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_7" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_8" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_9" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_10" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_11" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_12" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_13" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_14" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_data_o_15" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/epb_rdy" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_0" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_1" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_2" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_3" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_4" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_5" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_6" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_7" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_8" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_9" BEL
+        "epb_opb_bridge_inst/epb_opb_bridge_inst/timeout_counter_10" BEL
+        "sys_block_inst/sys_block_inst/val_gotRR" BEL
+        "sys_block_inst/sys_block_inst/Mshreg_val_gotRR" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_1" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_0" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_4" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_2" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_3" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_7" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_5" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_6" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_10" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_8" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_9" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_13" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_11" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_12" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_16" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_14" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_15" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_19" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_17" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_18" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_22" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_20" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_21" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_25" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_23" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_24" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_28" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_26" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_27" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_31" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_29" BEL
+        "sys_block_inst/sys_block_inst/scratch_pad_30" BEL
+        "sys_block_inst/sys_block_inst/Sl_xferAck" BEL
+        "sys_block_inst/sys_block_inst/soft_reset" BEL
+        "sys_block_inst/sys_block_inst/latch_start" BEL
+        "sys_block_inst/sys_block_inst/bus_wait" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_31" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_30" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_29" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_28" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_27" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_26" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_25" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_24" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_23" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_22" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_21" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_20" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_19" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_18" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_17" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_16" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_15" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_14" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_13" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_12" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_11" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_10" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_9" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_8" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_7" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_6" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_5" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_4" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_3" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_2" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_1" BEL
+        "sys_block_inst/sys_block_inst/fab_clk_counter_latched_0" BEL
+        "sys_block_inst/sys_block_inst/latch_state_FSM_FFd1" BEL
+        "sys_block_inst/sys_block_inst/latch_state_FSM_FFd2" BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_adc1_sample_RR"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/Mshreg_adc0_adc1_sample_RR"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_adc0_sample_RR"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/Mshreg_adc1_adc0_sample_RR"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_14"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_7"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_15"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_7"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_8"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_address_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_address_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_address_0"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_9"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_8"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_address_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_address_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_address_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_psincdec"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_9"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_modepin_int"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_10"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_11"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_14"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_12"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_13"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_15"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_1"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_1"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_0"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_10"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_3"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_2"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_11"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_modepin_int"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_12"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_5"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_data_6"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_data_13"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clk_counter_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clk_counter_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clk_counter_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clk_counter_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clk_counter_5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clk_counter_6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clk_counter_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clk_counter_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clk_counter_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clk_counter_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clk_counter_5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clk_counter_6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/xfer_progress_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/xfer_progress_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/xfer_progress_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/xfer_progress_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/xfer_progress_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/xfer_progress_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_7"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_8"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_9"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_10"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_11"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_12"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_13"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_14"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_15"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_16"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_17"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/shift_register_18"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/xfer_progress_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/xfer_progress_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/xfer_progress_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/xfer_progress_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_3wire_request_int"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_3wire_request_int"
+        BEL "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_psen"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_ddrb_int"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc0_3wire_start_int"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/adc1_3wire_start_int"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_31"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_23"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_22"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_21"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_20"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_15"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_14"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_13"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_12"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_11"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_10"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_9"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_8"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_7"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_dbus_s2_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/conf_state_FSM_FFd3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/new_pw_s0_d1_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/postedwrack_s2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_xferack_s1_d1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_xferack_s2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_be_s0_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_be_s0_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_be_s0_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_be_s0_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_abus_s0_29"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_abus_s0_28"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_rnw_s0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_select_s0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_31"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_23"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_22"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_21"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_20"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_15"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_14"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_13"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_12"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_11"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_10"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_9"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_8"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_7"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/opb_dbus_s0_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/sln_xferack_s1_d2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/last_pw_xferack_d1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/last_xferack_d1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/bus2ip_cs_hit_s0_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/last_xferack_d1_s0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/OPB_IPIF_I/OPB_BAM_I/bus2ip_cs_hit_s0_d1_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/xfer_state_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/xfer_state_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/xfer_state_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/ddrb_reg"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/dcm_reset_extend_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/dcm_reset_extend_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/dcm_reset_extend_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/dcm_reset_extend_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/dcm_reset_extend_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clk_counter_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_7"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_8"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_9"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/conf_state_FSM_FFd2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/conf_state_FSM_FFd5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/conf_state_FSM_FFd6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/conf_state_FSM_FFd4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/xfer_state_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/xfer_state_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/xfer_state_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clk_counter_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_0"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_1"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_2"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_3"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_4"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_7"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_8"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/clear_wait_9"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/conf_state_FSM_FFd5"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/conf_state_FSM_FFd6"
+        BEL
+        "opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_1/conf_state_FSM_FFd4"
+        PIN
+        "interleaved_adc_64_adc/interleaved_adc_64_adc/CLKSHIFT_DCM_pins<29>"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_readyRR"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/Mshreg_register_readyRR"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_request"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_0"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_1"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_2"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_3"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_4"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_5"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_6"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_7"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_8"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_9"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_10"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_11"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_12"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_13"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_14"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_15"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_16"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_17"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_18"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_19"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_20"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_21"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_22"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_23"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_24"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_25"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_26"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_27"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_28"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_29"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_30"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/register_buffer_31"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/buf_lock"
+        BEL
+        "interleaved_adc_64_snap64_addr/interleaved_adc_64_snap64_addr/Sl_xferAck_reg"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/ip2bus_rdack"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_xferack_s1_d1"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_31"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_30"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_29"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_28"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_27"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_26"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_25"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_24"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_23"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_22"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_21"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_20"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_19"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_18"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_17"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_16"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_15"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_14"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_13"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_12"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_11"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_10"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_9"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_8"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_7"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_6"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_5"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_4"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_3"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_2"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_1"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_0"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/sln_xferack_s2"
+        BEL
+        "interleaved_adc_64_snap64_bram_lsb/interleaved_adc_64_snap64_bram_lsb/I_opb_ipif/OPB_BAM_I/postedwrack_s2"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/ip2bus_rdack"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_xferack_s1_d1"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_31"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_30"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_29"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_28"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_27"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_26"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_25"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_24"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_23"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_22"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_21"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_20"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_19"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_18"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_17"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_16"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_15"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_14"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_13"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_12"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_11"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_10"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_9"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_8"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_7"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_6"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_5"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_4"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_3"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_2"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_1"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_dbus_s2_0"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/sln_xferack_s2"
+        BEL
+        "interleaved_adc_64_snap64_bram_msb/interleaved_adc_64_snap64_bram_msb/I_opb_ipif/OPB_BAM_I/postedwrack_s2"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/register_doneRR"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/Mshreg_register_doneRR"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_30"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_31"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_27"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_29"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_28"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_26"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_25"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_22"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_24"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_23"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_21"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_20"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_17"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_19"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_18"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_16"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_15"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_12"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_14"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_13"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_9"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_11"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_10"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_6"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_8"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_7"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_5"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_4"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_1"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_3"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_2"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_0"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/Sl_xferAck_reg"
+        BEL
+        "interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/register_ready"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/register_doneRR"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/Mshreg_register_doneRR"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/Sl_xferAck_reg"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/register_ready"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_30"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_31"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_27"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_29"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_28"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_26"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_25"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_22"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_24"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_23"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_21"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_20"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_17"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_19"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_18"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_16"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_15"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_12"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_14"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_13"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_9"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_11"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_10"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_6"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_8"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_7"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_5"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_4"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_1"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_3"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_2"
+        BEL
+        "interleaved_adc_64_trigger/interleaved_adc_64_trigger/reg_buffer_0";
+TIMEGRP dly_clk_n = BEL "infrastructure_inst/infrastructure_inst/bufg_inst";
+PIN infrastructure_inst/infrastructure_inst/dcm_epb_inst_pins<2> = BEL
+        "infrastructure_inst/infrastructure_inst/dcm_epb_inst" PINNAME CLKIN;
+TIMEGRP epb_clk_in = PIN
+        "infrastructure_inst/infrastructure_inst/dcm_epb_inst_pins<2>";
+PIN infrastructure_inst/infrastructure_inst/SYS_CLK_DCM_pins<2> = BEL
+        "infrastructure_inst/infrastructure_inst/SYS_CLK_DCM" PINNAME CLKIN;
+TIMEGRP sys_clk_n = PIN
+        "infrastructure_inst/infrastructure_inst/SYS_CLK_DCM_pins<2>";
+NET "epb_cs_n_IBUF" MAXDELAY = 4 ns;
+NET "interleaved_adc_64_adc/interleaved_adc_64_adc/adc_clk_buf" PERIOD = 5 ns
+        HIGH 50%;
+TS_sys_clk_n = PERIOD TIMEGRP "sys_clk_n" 100 MHz HIGH 50%;
+TS_dly_clk_n = PERIOD TIMEGRP "dly_clk_n" 200 MHz HIGH 50%;
+SCHEMATIC END;
+

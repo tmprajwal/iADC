@@ -1,0 +1,258 @@
+Release 14.6 ngdbuild P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /usr/local/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -p
+xc5vsx95tff1136-1 -nt timestamp -sd ../pcores -uc system.ucf
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/impl
+ementation/system.ngc system.ngd
+
+Reading NGO file
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system.ngc" ...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_infrastructure_inst_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_reset_block_inst_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_opb0_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_epb_opb_bridge_inst_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_epb_infrastructure_inst_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_sys_block_inst_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_opb_adccontroller_0_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_xsg_core_config_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_adc_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_snap64_addr_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_snap64_bram_lsb_ramif_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_snap64_bram_lsb_ramblk_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_snap64_bram_lsb_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_snap64_bram_msb_ramif_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_snap64_bram_msb_ramblk_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_snap64_bram_msb_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_snap64_ctrl_wrapper.ngc"...
+Loading design module
+"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/imp
+lementation/system_interleaved_adc_64_trigger_wrapper.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_epb_clk_in = PERIOD
+   epb_clk 66 MHz;> [system.ucf(11)]: Unable to find an active 'TNM' or
+   'TimeGrp' constraint named 'epb_clk'.
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_n', used in period specification
+   'TS_sys_clk_n', was traced into DCM_ADV instance
+   infrastructure_inst/SYS_CLK_DCM. The following new TNM groups and period
+   specifications were generated at the DCM_ADV output(s): 
+   CLK2X: <TIMESPEC TS_infrastructure_inst_infrastructure_inst_sys_clk2x_int =
+   PERIOD "infrastructure_inst_infrastructure_inst_sys_clk2x_int" TS_sys_clk_n *
+   2 HIGH 50%>
+
+INFO:ConstraintSystem - The Period constraint <PERIOD = 5 ns ;>
+   [system.ucf(128)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
+INFO:ConstraintSystem - The Period constraint <PERIOD = 5 ns ;>
+   [system.ucf(129)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
+   infrastructure_inst/SYS_CLK_DCM to 10.000000 ns based on the period
+   specification (<TIMESPEC TS_sys_clk_n = PERIOD sys_clk_n 100 MHz;>
+   [system.ucf(5)]).
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'interleaved_adc_64_XSG_core_config/interleaved_adc_64_XSG_core_config/defaul
+   t_clock_driver_interleaved_adc_64_x0/xlclockdriver_1/clr_reg/latency_gt_0.fd_
+   array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp' has unconnected output
+   pin
+WARNING:NgdBuild:443 - SFF primitive
+   'interleaved_adc_64_XSG_core_config/interleaved_adc_64_XSG_core_config/interl
+   eaved_adc_64_x0/snap64_a287c47437/bram_lsb_a795a20a6f/calc_add_aff9e82df6/add
+   _sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array
+   [0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'interleaved_adc_64_XSG_core_config/interleaved_adc_64_XSG_core_config/interl
+   eaved_adc_64_x0/snap64_a287c47437/bram_lsb_a795a20a6f/calc_add_aff9e82df6/add
+   _sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array
+   [1].bit_is_1.fdse_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'interleaved_adc_64_XSG_core_config/interleaved_adc_64_XSG_core_config/interl
+   eaved_adc_64_x0/snap64_a287c47437/bram_lsb_a795a20a6f/calc_add_aff9e82df6/add
+   _sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array
+   [2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'interleaved_adc_64_XSG_core_config/interleaved_adc_64_XSG_core_config/interl
+   eaved_adc_64_x0/snap64_a287c47437/bram_msb_b3906a2416/calc_add_aff9e82df6/add
+   _sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array
+   [0].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'interleaved_adc_64_XSG_core_config/interleaved_adc_64_XSG_core_config/interl
+   eaved_adc_64_x0/snap64_a287c47437/bram_msb_b3906a2416/calc_add_aff9e82df6/add
+   _sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array
+   [1].bit_is_1.fdse_comp' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'interleaved_adc_64_XSG_core_config/interleaved_adc_64_XSG_core_config/interl
+   eaved_adc_64_x0/snap64_a287c47437/bram_msb_b3906a2416/calc_add_aff9e82df6/add
+   _sub/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array
+   [2].bit_is_0.fdre_comp' has unconnected output pin
+WARNING:NgdBuild:452 - logical net 'N18' has no driver
+WARNING:NgdBuild:452 - logical net 'N19' has no driver
+WARNING:NgdBuild:452 - logical net 'N20' has no driver
+WARNING:NgdBuild:452 - logical net 'N21' has no driver
+WARNING:NgdBuild:452 - logical net 'N22' has no driver
+WARNING:NgdBuild:452 - logical net 'N23' has no driver
+WARNING:NgdBuild:452 - logical net 'N24' has no driver
+WARNING:NgdBuild:452 - logical net 'N25' has no driver
+WARNING:NgdBuild:452 - logical net 'N26' has no driver
+WARNING:NgdBuild:452 - logical net 'N27' has no driver
+WARNING:NgdBuild:452 - logical net 'N28' has no driver
+WARNING:NgdBuild:452 - logical net 'N29' has no driver
+WARNING:NgdBuild:452 - logical net 'N30' has no driver
+WARNING:NgdBuild:452 - logical net 'N31' has no driver
+WARNING:NgdBuild:452 - logical net 'N32' has no driver
+WARNING:NgdBuild:452 - logical net 'N33' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_empty_
+   thresh_negate<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_assert<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_assert<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_assert<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_assert<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_assert<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_negate<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_negate<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_negate<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_negate<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/prog_full_t
+   hresh_negate<0>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  54
+
+Total memory usage is 532808 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   7 sec
+
+Writing NGDBUILD log file "system.bld"...

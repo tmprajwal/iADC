@@ -1,0 +1,80 @@
+// File: /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/implementation/system_stub.bmm
+
+ADDRESS_MAP epb_opb_bridge_inst  100
+	ADDRESS_SPACE interleaved_adc_64_snap64_bram_lsb_ramblk_combined COMBINED [0x01020000:0x0103ffff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0 [31:31] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_0.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_1 [30:30] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_1.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_2 [29:29] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_2.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_3 [28:28] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_3.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_4 [27:27] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_4.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_5 [26:26] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_5.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_6 [25:25] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_6.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_7 [24:24] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_7.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_8 [23:23] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_8.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_9 [22:22] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_9.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_10 [21:21] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_10.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_11 [20:20] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_11.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_12 [19:19] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_12.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_13 [18:18] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_13.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_14 [17:17] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_14.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_15 [16:16] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_15.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_16 [15:15] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_16.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_17 [14:14] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_17.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_18 [13:13] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_18.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_19 [12:12] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_19.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_20 [11:11] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_20.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_21 [10:10] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_21.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_22 [9:9] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_22.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_23 [8:8] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_23.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_24 [7:7] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_24.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_25 [6:6] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_25.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_26 [5:5] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_26.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_27 [4:4] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_27.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_28 [3:3] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_28.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_29 [2:2] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_29.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_30 [1:1] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_30.mem ;
+			system_i/interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_31 [0:0] INPUT = interleaved_adc_64_snap64_bram_lsb_ramblk_combined_31.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+	ADDRESS_SPACE interleaved_adc_64_snap64_bram_msb_ramblk_combined COMBINED [0x01040000:0x0105ffff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0 [31:31] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_0.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_1 [30:30] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_1.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_2 [29:29] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_2.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_3 [28:28] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_3.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_4 [27:27] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_4.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_5 [26:26] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_5.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_6 [25:25] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_6.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_7 [24:24] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_7.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_8 [23:23] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_8.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_9 [22:22] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_9.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_10 [21:21] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_10.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_11 [20:20] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_11.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_12 [19:19] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_12.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_13 [18:18] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_13.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_14 [17:17] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_14.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_15 [16:16] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_15.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_16 [15:15] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_16.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_17 [14:14] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_17.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_18 [13:13] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_18.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_19 [12:12] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_19.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_20 [11:11] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_20.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_21 [10:10] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_21.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_22 [9:9] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_22.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_23 [8:8] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_23.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_24 [7:7] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_24.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_25 [6:6] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_25.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_26 [5:5] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_26.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_27 [4:4] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_27.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_28 [3:3] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_28.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_29 [2:2] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_29.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_30 [1:1] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_30.mem ;
+			system_i/interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_31 [0:0] INPUT = interleaved_adc_64_snap64_bram_msb_ramblk_combined_31.mem ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

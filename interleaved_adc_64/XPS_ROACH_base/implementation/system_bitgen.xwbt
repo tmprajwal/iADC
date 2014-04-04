@@ -1,0 +1,7 @@
+INFILE=/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/implementation/system.ncd
+OUTFILE=/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/implementation/system.bit
+FAMILY=Virtex5
+PART=xc5vsx95t-1ff1136
+WORKINGDIR=/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/implementation
+LICENSE=ISE
+USER_INFO=210644254_1777486773_210545869_703

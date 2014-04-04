@@ -1,0 +1,620 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xst.prj"
+Verilog Include Directory          : {"/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/pcores/" "/usr/local/Xilinx/14.6/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/usr/local/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc5vsx95tff1136-1
+Output File Name                   : "../implementation/system.ngc"
+
+---- Source Options
+Top Module Name                    : system
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" in Library work.
+Entity <system> compiled.
+Entity <system> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk90' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk180' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk270' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk_lock' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk2x' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk2x90' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk2x180' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'sys_clk2x270' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'dly_clk' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux0_clk' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux0_clk90' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux0_clk180' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux0_clk270' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux1_clk' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux1_clk90' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux1_clk180' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux1_clk270' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux0_clk2x' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux0_clk2x90' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux0_clk2x180' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'aux0_clk2x270' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 694: Unconnected output port 'idelay_rdy' of component 'system_infrastructure_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 733: Unconnected output port 'op_reset_o' of component 'system_reset_block_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_MRequest' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_beXfer' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_beAck' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_busLock' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_rdDBus' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_wrDBus' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_dwAck' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_dwXfer' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_fwAck' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_fwXfer' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_hwAck' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_hwXfer' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_pendReq' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 741: Unconnected output port 'OPB_toutSup' of component 'system_opb0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 855: Unconnected output port 'soft_reset' of component 'system_sys_block_inst_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_adc3wire_clk' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_adc3wire_data' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_adc3wire_strobe' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_modepin' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_ddrb' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_dcm_reset' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_psclk' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_psen' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 876: Unconnected output port 'adc1_psincdec' of component 'system_opb_adccontroller_0_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 948: Unconnected output port 'ctrl_clk90_out' of component 'system_interleaved_adc_64_adc_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 948: Unconnected output port 'ctrl_clk180_out' of component 'system_interleaved_adc_64_adc_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 948: Unconnected output port 'ctrl_clk270_out' of component 'system_interleaved_adc_64_adc_wrapper'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd" line 948: Unconnected output port 'ctrl_dcm_locked' of component 'system_interleaved_adc_64_adc_wrapper'.
+Entity <system> analyzed. Unit <system> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <system>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/system.vhd".
+Unit <system> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/system_infrastructure_inst_wrapper.ngc>.
+Reading core <../implementation/system_reset_block_inst_wrapper.ngc>.
+Reading core <../implementation/system_opb0_wrapper.ngc>.
+Reading core <../implementation/system_epb_opb_bridge_inst_wrapper.ngc>.
+Reading core <../implementation/system_epb_infrastructure_inst_wrapper.ngc>.
+Reading core <../implementation/system_sys_block_inst_wrapper.ngc>.
+Reading core <../implementation/system_opb_adccontroller_0_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_xsg_core_config_wrapper.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <../implementation/system_interleaved_adc_64_adc_wrapper.ngc>.
+Reading Secure Unit <U0/fgas>.
+Reading core <../implementation/system_interleaved_adc_64_snap64_addr_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_snap64_bram_lsb_ramif_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_snap64_bram_lsb_ramblk_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_snap64_bram_lsb_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_snap64_bram_msb_ramif_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_snap64_bram_msb_ramblk_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_snap64_bram_msb_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_snap64_ctrl_wrapper.ngc>.
+Reading core <../implementation/system_interleaved_adc_64_trigger_wrapper.ngc>.
+Loading core <system_infrastructure_inst_wrapper> for timing and area information for instance <infrastructure_inst>.
+Loading core <system_reset_block_inst_wrapper> for timing and area information for instance <reset_block_inst>.
+Loading core <system_opb0_wrapper> for timing and area information for instance <opb0>.
+Loading core <system_epb_opb_bridge_inst_wrapper> for timing and area information for instance <epb_opb_bridge_inst>.
+Loading core <system_epb_infrastructure_inst_wrapper> for timing and area information for instance <epb_infrastructure_inst>.
+Loading core <system_sys_block_inst_wrapper> for timing and area information for instance <sys_block_inst>.
+Loading core <system_opb_adccontroller_0_wrapper> for timing and area information for instance <opb_adccontroller_0>.
+Loading core <system_interleaved_adc_64_xsg_core_config_wrapper> for timing and area information for instance <interleaved_adc_64_XSG_core_config>.
+Loading core <system_interleaved_adc_64_adc_wrapper> for timing and area information for instance <interleaved_adc_64_adc>.
+Loading core <system_interleaved_adc_64_snap64_addr_wrapper> for timing and area information for instance <interleaved_adc_64_snap64_addr>.
+Loading core <system_interleaved_adc_64_snap64_bram_lsb_ramif_wrapper> for timing and area information for instance <interleaved_adc_64_snap64_bram_lsb_ramif>.
+Loading core <system_interleaved_adc_64_snap64_bram_lsb_ramblk_wrapper> for timing and area information for instance <interleaved_adc_64_snap64_bram_lsb_ramblk>.
+Loading core <system_interleaved_adc_64_snap64_bram_lsb_wrapper> for timing and area information for instance <interleaved_adc_64_snap64_bram_lsb>.
+Loading core <system_interleaved_adc_64_snap64_bram_msb_ramif_wrapper> for timing and area information for instance <interleaved_adc_64_snap64_bram_msb_ramif>.
+Loading core <system_interleaved_adc_64_snap64_bram_msb_ramblk_wrapper> for timing and area information for instance <interleaved_adc_64_snap64_bram_msb_ramblk>.
+Loading core <system_interleaved_adc_64_snap64_bram_msb_wrapper> for timing and area information for instance <interleaved_adc_64_snap64_bram_msb>.
+Loading core <system_interleaved_adc_64_snap64_ctrl_wrapper> for timing and area information for instance <interleaved_adc_64_snap64_ctrl>.
+Loading core <system_interleaved_adc_64_trigger_wrapper> for timing and area information for instance <interleaved_adc_64_trigger>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_8> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_1> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_8> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_3> in Unit <U0/fgas> is equivalent to the following 6 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 5 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_13> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 11 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3> in Unit <U0/fgas> is equivalent to the following 4 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_12> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_8> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_1> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_4_8> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_3> in Unit <U0/fgas> is equivalent to the following 6 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 5 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_13> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 11 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_2> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_12> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_13> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> in Unit <U0/fgas> is equivalent to the following 7 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_2_9> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> in Unit <U0/fgas> is equivalent to the following 12 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_4> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_5> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_6> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_7> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_8> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_14> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_15> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_16> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_17> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_18> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_1_19> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3> in Unit <U0/fgas> is equivalent to the following 4 FFs/Latches : <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_1> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_10> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_11> <cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_3_12> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0> in Unit <U0/fgas> is equivalent to the following FF/Latch : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0_1> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_1_3> 
+INFO:Xst:2260 - The FF/Latch <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2> in Unit <U0/fgas> is equivalent to the following 3 FFs/Latches : <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_1> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_2> <cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_2_3> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 139
+
+Cell Usage :
+# BELS                             : 1449
+#      GND                         : 20
+#      INV                         : 57
+#      LUT1                        : 39
+#      LUT2                        : 277
+#      LUT2_L                      : 6
+#      LUT3                        : 112
+#      LUT4                        : 189
+#      LUT4_D                      : 3
+#      LUT4_L                      : 8
+#      LUT5                        : 100
+#      LUT6                        : 352
+#      MUXCY                       : 132
+#      MUXF7                       : 44
+#      VCC                         : 15
+#      XORCY                       : 95
+# FlipFlops/Latches                : 1146
+#      FD                          : 460
+#      FD_1                        : 19
+#      FDC                         : 33
+#      FDCE                        : 217
+#      FDE                         : 143
+#      FDP                         : 5
+#      FDPE                        : 5
+#      FDR                         : 149
+#      FDRE                        : 29
+#      FDRS                        : 14
+#      FDS                         : 16
+#      FDSE                        : 22
+#      IDDR_2CLK                   : 34
+# RAMS                             : 136
+#      RAM32X1D                    : 72
+#      RAMB36_EXP                  : 64
+# Shift Registers                  : 13
+#      SRL16                       : 1
+#      SRLC16E                     : 12
+# Clock Buffers                    : 18
+#      BUFG                        : 18
+# IO Buffers                       : 98
+#      IBUF                        : 34
+#      IBUFDS                      : 37
+#      IBUFG                       : 1
+#      IBUFGDS                     : 3
+#      IOBUF                       : 17
+#      OBUF                        : 5
+#      OBUFDS                      : 1
+# DCM_ADVs                         : 7
+#      DCM_ADV                     : 7
+# Others                           : 1
+#      IDELAYCTRL                  : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1080  out of  58880     1%  
+ Number of Slice LUTs:                 1300  out of  58880     2%  
+    Number used as Logic:              1143  out of  58880     1%  
+    Number used as Memory:              157  out of  24320     0%  
+       Number used as RAM:              144
+       Number used as SRL:               13
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1819
+   Number with an unused Flip Flop:     739  out of   1819    40%  
+   Number with an unused LUT:           519  out of   1819    28%  
+   Number of fully used LUT-FF pairs:   561  out of   1819    30%  
+   Number of unique control sets:        90
+
+IO Utilization: 
+ Number of IOs:                         139
+ Number of bonded IOBs:                  58  out of    640     9%  
+    IOB Flip Flops/Latches:              66
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               64  out of    244    26%  
+    Number using Block RAM only:         64
+ Number of BUFG/BUFGCTRLs:               18  out of     32    56%  
+ Number of DCM_ADVs:                      7  out of     12    58%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                  | Load  |
+-----------------------------------+------------------------------------------------------------------------+-------+
+epb_clk_in                         | infrastructure_inst/dcm_epb_inst:CLK0                                  | 679   |
+adc0clk_p                          | interleaved_adc_64_adc/CLKSHIFT_DCM:CLK0                               | 655   |
+N0                                 | NONE(opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/FD_ADC1_ADC0)| 3     |
+adc0clk_p                          | interleaved_adc_64_adc/CLKSHIFT_DCM:CLK90                              | 4     |
+-----------------------------------+------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                             | Buffer(FF name)                                                                                                                  | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/net_gnd0(interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/XST_GND:G)| NONE(interleaved_adc_64_snap64_bram_lsb_ramblk/interleaved_adc_64_snap64_bram_lsb_ramblk/ramb36_0)                               | 256   |
+interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/net_gnd0(interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/XST_GND:G)| NONE(interleaved_adc_64_snap64_bram_msb_ramblk/interleaved_adc_64_snap64_bram_msb_ramblk/ramb36_0)                               | 256   |
+interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_int<3>(interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_fb:Q)   | NONE(interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/cntblk/gen_rd_cntr/bin_cnt_top/bld_bin_cnt/count_0)| 183   |
+interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/wr_rst_int<3>(interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/wr_rst_int_1:Q)| NONE(interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/cntblk/gen_wr_cntr/bin_cnt_top/bld_bin_cnt/count_0)| 39    |
+infrastructure_inst/op_power_on_rst(infrastructure_inst/infrastructure_inst/op_power_on_rst1_INV_0:O)                                                                                      | NONE(reset_block_inst/reset_block_inst/op_reset_o)                                                                               | 33    |
+opb_adccontroller_0/adc0_dcm_reset(opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/dcm_reset_o1:O)                                                                                | NONE(interleaved_adc_64_adc/interleaved_adc_64_adc/ADC_ASYNC_FIFO/BU2/U0/fgas/inblk/rd_rst_fb)                                   | 5     |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 6.799ns (Maximum Frequency: 147.071MHz)
+   Minimum input arrival time before clock: 1.738ns
+   Maximum output required time after clock: 5.357ns
+   Maximum combinational path delay: 4.765ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'epb_clk_in'
+  Clock period: 6.799ns (frequency: 147.071MHz)
+  Total number of paths / destination ports: 81695 / 3455
+-------------------------------------------------------------------------
+Delay:               6.799ns (Levels of Logic = 11)
+  Source:            epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n (FF)
+  Destination:       interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_25 (FF)
+  Source Clock:      epb_clk_in rising +127
+  Destination Clock: epb_clk_in rising +127
+
+  Data Path: epb_opb_bridge_inst/epb_opb_bridge_inst/prev_cs_n to interleaved_adc_64_snap64_ctrl/interleaved_adc_64_snap64_ctrl/reg_buffer_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              65   0.471   0.922  epb_opb_bridge_inst/prev_cs_n (epb_opb_bridge_inst/prev_cs_n)
+     LUT4:I0->O          138   0.094   1.120  epb_opb_bridge_inst/M_ABus<28>1 (M_ABus<28>)
+     end scope: 'epb_opb_bridge_inst'
+     begin scope: 'opb0'
+     end scope: 'opb0'
+     begin scope: 'sys_block_inst'
+     LUT5:I0->O           31   0.094   0.916  sys_block_inst/Sl_DBus_0_mux000011 (sys_block_inst/N2)
+     LUT4:I0->O            1   0.094   1.069  sys_block_inst/Sl_DBus_6_mux00001 (Sl_DBus<6>)
+     end scope: 'sys_block_inst'
+     begin scope: 'opb0'
+     LUT6:I0->O            1   0.094   0.000  opb0/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_6_or00001 (opb0/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_6_or0000)
+     MUXF7:I0->O           1   0.251   0.480  opb0/ARBITER_HAS_NO_PROC_INTF.OPB_rdDBus_I/Y_6_or0000_f7 (OPB_rdDBus<6>)
+     LUT2:I1->O            7   0.094   1.006  opb0/OPB_DBus_I/Y_6_or00001 (OPB_DBus<6>)
+     end scope: 'opb0'
+     begin scope: 'interleaved_adc_64_snap64_ctrl'
+     LUT6:I1->O            1   0.094   0.000  interleaved_adc_64_snap64_ctrl/reg_buffer_25_rstpot (interleaved_adc_64_snap64_ctrl/reg_buffer_25_rstpot)
+     FD:D                     -0.018          interleaved_adc_64_snap64_ctrl/reg_buffer_25
+    ----------------------------------------
+    Total                      6.799ns (1.286ns logic, 5.513ns route)
+                                       (18.9% logic, 81.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc0clk_p'
+  Clock period: 2.559ns (frequency: 390.778MHz)
+  Total number of paths / destination ports: 6162 / 4085
+-------------------------------------------------------------------------
+Delay:               2.559ns (Levels of Logic = 33)
+  Source:            sys_block_inst/sys_block_inst/fab_clk_counter_31 (FF)
+  Destination:       sys_block_inst/sys_block_inst/fab_clk_counter_0 (FF)
+  Source Clock:      adc0clk_p rising +32
+  Destination Clock: adc0clk_p rising +32
+
+  Data Path: sys_block_inst/sys_block_inst/fab_clk_counter_31 to sys_block_inst/sys_block_inst/fab_clk_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.471   0.341  sys_block_inst/fab_clk_counter_31 (sys_block_inst/fab_clk_counter<31>)
+     INV:I->O              1   0.238   0.000  sys_block_inst/Mcount_fab_clk_counter_lut<0>_INV_0 (sys_block_inst/Mcount_fab_clk_counter_lut<0>)
+     MUXCY:S->O            1   0.372   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<0> (sys_block_inst/Mcount_fab_clk_counter_cy<0>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<1> (sys_block_inst/Mcount_fab_clk_counter_cy<1>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<2> (sys_block_inst/Mcount_fab_clk_counter_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<3> (sys_block_inst/Mcount_fab_clk_counter_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<4> (sys_block_inst/Mcount_fab_clk_counter_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<5> (sys_block_inst/Mcount_fab_clk_counter_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<6> (sys_block_inst/Mcount_fab_clk_counter_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<7> (sys_block_inst/Mcount_fab_clk_counter_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<8> (sys_block_inst/Mcount_fab_clk_counter_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<9> (sys_block_inst/Mcount_fab_clk_counter_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<10> (sys_block_inst/Mcount_fab_clk_counter_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<11> (sys_block_inst/Mcount_fab_clk_counter_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<12> (sys_block_inst/Mcount_fab_clk_counter_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<13> (sys_block_inst/Mcount_fab_clk_counter_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<14> (sys_block_inst/Mcount_fab_clk_counter_cy<14>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<15> (sys_block_inst/Mcount_fab_clk_counter_cy<15>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<16> (sys_block_inst/Mcount_fab_clk_counter_cy<16>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<17> (sys_block_inst/Mcount_fab_clk_counter_cy<17>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<18> (sys_block_inst/Mcount_fab_clk_counter_cy<18>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<19> (sys_block_inst/Mcount_fab_clk_counter_cy<19>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<20> (sys_block_inst/Mcount_fab_clk_counter_cy<20>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<21> (sys_block_inst/Mcount_fab_clk_counter_cy<21>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<22> (sys_block_inst/Mcount_fab_clk_counter_cy<22>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<23> (sys_block_inst/Mcount_fab_clk_counter_cy<23>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<24> (sys_block_inst/Mcount_fab_clk_counter_cy<24>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<25> (sys_block_inst/Mcount_fab_clk_counter_cy<25>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<26> (sys_block_inst/Mcount_fab_clk_counter_cy<26>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<27> (sys_block_inst/Mcount_fab_clk_counter_cy<27>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<28> (sys_block_inst/Mcount_fab_clk_counter_cy<28>)
+     MUXCY:CI->O           1   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<29> (sys_block_inst/Mcount_fab_clk_counter_cy<29>)
+     MUXCY:CI->O           0   0.026   0.000  sys_block_inst/Mcount_fab_clk_counter_cy<30> (sys_block_inst/Mcount_fab_clk_counter_cy<30>)
+     XORCY:CI->O           1   0.357   0.000  sys_block_inst/Mcount_fab_clk_counter_xor<31> (sys_block_inst/Result<31>)
+     FD:D                     -0.018          sys_block_inst/fab_clk_counter_0
+    ----------------------------------------
+    Total                      2.559ns (2.218ns logic, 0.341ns route)
+                                       (86.7% logic, 13.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'N0'
+  Clock period: 1.604ns (frequency: 623.441MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.604ns (Levels of Logic = 1)
+  Source:            opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/FD_ADC1_HALF (FF)
+  Destination:       opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/FD_ADC1_ADC0 (FF)
+  Source Clock:      N0 rising
+  Destination Clock: N0 rising
+
+  Data Path: opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/FD_ADC1_HALF to opb_adccontroller_0/opb_adccontroller_0/USER_LOGIC_I/FD_ADC1_ADC0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.471   0.341  opb_adccontroller_0/USER_LOGIC_I/FD_ADC1_HALF (opb_adccontroller_0/USER_LOGIC_I/adc1_toggle)
+     INV:I->O              2   0.238   0.341  opb_adccontroller_0/USER_LOGIC_I/not_adc1_toggle1_INV_0 (opb_adccontroller_0/USER_LOGIC_I/not_adc1_toggle)
+     FDE:CE                    0.213          opb_adccontroller_0/USER_LOGIC_I/FD_ADC1_ADC0
+    ----------------------------------------
+    Total                      1.604ns (0.922ns logic, 0.682ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'epb_clk_in'
+  Total number of paths / destination ports: 35 / 35
+-------------------------------------------------------------------------
+Offset:              1.738ns (Levels of Logic = 3)
+  Source:            epb_cs_n (PAD)
+  Destination:       epb_opb_bridge_inst/epb_opb_bridge_inst/epb_rdy_reg (FF)
+  Destination Clock: epb_clk_in rising +127
+
+  Data Path: epb_cs_n to epb_opb_bridge_inst/epb_opb_bridge_inst/epb_rdy_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.818   0.347  epb_cs_n_IBUF (epb_cs_n_IBUF)
+     begin scope: 'epb_infrastructure_inst'
+     end scope: 'epb_infrastructure_inst'
+     begin scope: 'epb_opb_bridge_inst'
+     FDRS:R                    0.573          epb_opb_bridge_inst/epb_rdy_reg
+    ----------------------------------------
+    Total                      1.738ns (1.391ns logic, 0.347ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc0clk_p'
+  Total number of paths / destination ports: 76 / 72
+-------------------------------------------------------------------------
+Offset:              1.170ns (Levels of Logic = 2)
+  Source:            adc0sync_p (PAD)
+  Destination:       interleaved_adc_64_adc/interleaved_adc_64_adc/adc_sync_ddr_3 (FF)
+  Destination Clock: adc0clk_p rising +32
+
+  Data Path: adc0sync_p to interleaved_adc_64_adc/interleaved_adc_64_adc/adc_sync_ddr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'interleaved_adc_64_adc'
+     IBUFDS:I->O           4   0.818   0.352  interleaved_adc_64_adc/IBUFDS_SYNC (interleaved_adc_64_adc/adc_sync)
+     FD:D                     -0.018          interleaved_adc_64_adc/adc_sync_ddr_3
+    ----------------------------------------
+    Total                      1.170ns (0.818ns logic, 0.352ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'epb_clk_in'
+  Total number of paths / destination ports: 86 / 23
+-------------------------------------------------------------------------
+Offset:              5.357ns (Levels of Logic = 5)
+  Source:            opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_2 (FF)
+  Destination:       adc0_modepin (PAD)
+  Source Clock:      epb_clk_in rising +127
+
+  Data Path: opb_adccontroller_0/opb_adccontroller_0/adc_config_mux_0/clear_wait_2 to adc0_modepin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             3   0.471   1.080  opb_adccontroller_0/adc_config_mux_0/clear_wait_2 (opb_adccontroller_0/adc_config_mux_0/clear_wait<2>)
+     LUT6:I0->O            1   0.094   0.000  opb_adccontroller_0/adc_config_mux_0/mode_o86_SW01 (opb_adccontroller_0/adc_config_mux_0/mode_o86_SW0)
+     MUXF7:I1->O           1   0.254   0.576  opb_adccontroller_0/adc_config_mux_0/mode_o86_SW0_f7 (N242)
+     LUT6:I4->O            1   0.094   0.336  opb_adccontroller_0/adc_config_mux_0/mode_o86 (adc0_modepin)
+     end scope: 'opb_adccontroller_0'
+     OBUF:I->O                 2.452          adc0_modepin_OBUF (adc0_modepin)
+    ----------------------------------------
+    Total                      5.357ns (3.365ns logic, 1.992ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 69 / 35
+-------------------------------------------------------------------------
+Delay:               4.765ns (Levels of Logic = 7)
+  Source:            epb_cs_n (PAD)
+  Destination:       epb_rdy (PAD)
+
+  Data Path: epb_cs_n to epb_rdy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.818   0.347  epb_cs_n_IBUF (epb_cs_n_IBUF)
+     begin scope: 'epb_infrastructure_inst'
+     end scope: 'epb_infrastructure_inst'
+     begin scope: 'epb_opb_bridge_inst'
+     INV:I->O              1   0.238   0.336  epb_opb_bridge_inst/epb_rdy_oe1_INV_0 (epb_rdy_oe)
+     end scope: 'epb_opb_bridge_inst'
+     begin scope: 'epb_infrastructure_inst'
+     INV:I->O              1   0.238   0.336  epb_infrastructure_inst/iob_epb_rdy_not00001_INV_0 (epb_infrastructure_inst/iob_epb_rdy_not0000)
+     IOBUF:T->IO               2.452          epb_infrastructure_inst/iob_epb_rdy (epb_rdy_buf)
+     end scope: 'epb_infrastructure_inst'
+    ----------------------------------------
+    Total                      4.765ns (3.746ns logic, 1.019ns route)
+                                       (78.6% logic, 21.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 27.98 secs
+ 
+--> 
+
+
+Total memory usage is 706452 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   52 (   0 filtered)
+Number of infos    :   27 (   0 filtered)
+

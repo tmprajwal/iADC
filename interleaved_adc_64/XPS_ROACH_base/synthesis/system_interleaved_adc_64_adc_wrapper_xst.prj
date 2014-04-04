@@ -1,0 +1,4 @@
+VHDL adc_interface_v1_01_a /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_fifo.vhd
+VHDL adc_interface_v1_01_a /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/ddr_input.vhd
+VHDL adc_interface_v1_01_a /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/pcores/adc_interface_v1_01_a/hdl/vhdl/adc_interface.vhd
+vhdl work ../hdl/system_interleaved_adc_64_adc_wrapper.vhd

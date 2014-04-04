@@ -1,0 +1,138 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/usr/local/Xilinx/14.6/ISE_DS/ISE/bin/lin64/unwrapped/trce -e 200 -xml
+system.twx system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc5vsx95t,ff1136,-1 (PRODUCTION 1.73 2013-06-08, STEPPING level 0)
+Report level:             error report, limited to 200 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "epb_cs_n_IBUF" MAXDELAY = 4 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net delay is   2.238ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET 
+"interleaved_adc_64_adc/interleaved_adc_64_adc/adc_clk_buf" PERIOD = 5 ns       
+  HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.600ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net 
+"interleaved_adc_64_adc/interleaved_adc_64_adc/adc_clk_dcm" derived from  NET 
+"interleaved_adc_64_adc/interleaved_adc_64_adc/adc_clk_buf" PERIOD = 5 ns       
+ HIGH 50%;  duty cycle corrected to 5 nS  HIGH 2.500 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 6196 paths analyzed, 4605 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.970ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sys_clk_n = PERIOD TIMEGRP "sys_clk_n" 100 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.332ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_dly_clk_n = PERIOD TIMEGRP "dly_clk_n" 200 MHz HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.221ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for interleaved_adc_64_adc/interleaved_adc_64_adc/adc_clk_buf
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|interleaved_adc_64_adc/interlea|      5.000ns|      3.600ns|      4.970ns|            0|            0|            0|         6196|
+|ved_adc_64_adc/adc_clk_buf     |             |             |             |             |             |             |             |
+| interleaved_adc_64_adc/interle|      5.000ns|      4.970ns|          N/A|            0|            0|         6196|            0|
+| aved_adc_64_adc/adc_clk_dcm   |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock adc0clk_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    4.970|         |         |         |
+adc0clk_p      |    4.970|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc0clk_p
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+adc0clk_n      |    4.970|         |         |         |
+adc0clk_p      |    4.970|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 6196 paths, 1 nets, and 4096 connections
+
+Design statistics:
+   Minimum period:   8.332ns   (Maximum frequency: 120.019MHz)
+   Maximum net delay:   2.238ns
+
+
+Analysis completed Thu Apr  3 22:53:30 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 644 MB
+
+
+

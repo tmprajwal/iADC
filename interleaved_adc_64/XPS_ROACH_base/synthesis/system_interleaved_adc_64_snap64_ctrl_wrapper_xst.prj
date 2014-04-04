@@ -1,0 +1,2 @@
+verilog opb_register_ppc2simulink_v1_00_a /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/pcores/opb_register_ppc2simulink_v1_00_a/hdl/verilog/opb_register_ppc2simulink.v
+verilog work ../hdl/system_interleaved_adc_64_snap64_ctrl_wrapper.v

@@ -1,0 +1,1 @@
+/usr/local/Xilinx/14.6/ISE_DS/ISE/sysgen/bin/lin64/saferun -a /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/interleaved_adc_64_cw_import.log -- /usr/local/Xilinx/14.6/ISE_DS/ISE//bin/lin64/xtclsh ProjectGeneration.tcl

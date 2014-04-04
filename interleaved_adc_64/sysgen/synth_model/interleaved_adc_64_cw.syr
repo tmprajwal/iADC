@@ -1,0 +1,1555 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xst_interleaved_adc_64.prj"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "interleaved_adc_64_cw.ngc"
+Output Format                      : NGC
+Target Device                      : xc5vsx95t-1ff1136
+
+---- Source Options
+Entity Name                        : interleaved_adc_64_cw
+Top Module Name                    : interleaved_adc_64_cw
+Automatic Register Balancing       : no
+
+---- Target Options
+Add IO Buffers                     : NO
+Pack IO Registers into IOBs        : Auto
+
+---- General Options
+Keep Hierarchy                     : NO
+Bus Delimiter                      : ()
+Hierarchy Separator                : /
+
+---- Other Options
+report_timing_constraint_problems  : warning
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" in Library work.
+Entity <cntr_11_0_95ce35bbf89e0586> compiled.
+Entity <cntr_11_0_95ce35bbf89e0586> (Architecture <cntr_11_0_95ce35bbf89e0586_a>) compiled.
+Package <conv_pkg> compiled.
+Package body <conv_pkg> compiled.
+Entity <srl17e> compiled.
+Entity <srl17e> (Architecture <structural>) compiled.
+Entity <synth_reg> compiled.
+Entity <synth_reg> (Architecture <structural>) compiled.
+Entity <synth_reg_reg> compiled.
+Entity <synth_reg_reg> (Architecture <behav>) compiled.
+Entity <single_reg_w_init> compiled.
+Entity <single_reg_w_init> (Architecture <structural>) compiled.
+Entity <synth_reg_w_init> compiled.
+Entity <synth_reg_w_init> (Architecture <structural>) compiled.
+Entity <concat_83e473517e> compiled.
+Entity <concat_83e473517e> (Architecture <behavior>) compiled.
+Entity <inverter_e2b989a05e> compiled.
+Entity <inverter_e2b989a05e> (Architecture <behavior>) compiled.
+Entity <reinterpret_4389dc89bf> compiled.
+Entity <reinterpret_4389dc89bf> (Architecture <behavior>) compiled.
+Entity <xlslice> compiled.
+Entity <xlslice> (Architecture <behavior>) compiled.
+Entity <convert_func_call> compiled.
+Entity <convert_func_call> (Architecture <behavior>) compiled.
+Entity <xlconvert> compiled.
+Entity <xlconvert> (Architecture <behavior>) compiled.
+Entity <addsub_c13097e33e> compiled.
+Entity <addsub_c13097e33e> (Architecture <behavior>) compiled.
+Entity <concat_798afc5ec0> compiled.
+Entity <concat_798afc5ec0> (Architecture <behavior>) compiled.
+Entity <constant_963ed6358a> compiled.
+Entity <constant_963ed6358a> (Architecture <behavior>) compiled.
+Entity <mux_e463a7ff8d> compiled.
+Entity <mux_e463a7ff8d> (Architecture <behavior>) compiled.
+Entity <xlcounter_free_interleaved_adc_64> compiled.
+Entity <xlcounter_free_interleaved_adc_64> (Architecture <behavior>) compiled.
+Entity <inverter_e5b38cca3b> compiled.
+Entity <inverter_e5b38cca3b> (Architecture <behavior>) compiled.
+Entity <logical_80f90b97d0> compiled.
+Entity <logical_80f90b97d0> (Architecture <behavior>) compiled.
+Entity <xldelay> compiled.
+Entity <xldelay> (Architecture <behavior>) compiled.
+Entity <constant_6293007044> compiled.
+Entity <constant_6293007044> (Architecture <behavior>) compiled.
+Entity <mux_d99e59b6d4> compiled.
+Entity <mux_d99e59b6d4> (Architecture <behavior>) compiled.
+Entity <xlregister> compiled.
+Entity <xlregister> (Architecture <behavior>) compiled.
+Entity <reinterpret_9a13f6a2a0> compiled.
+Entity <reinterpret_9a13f6a2a0> (Architecture <behavior>) compiled.
+Entity <concat_15d98836ad> compiled.
+Entity <concat_15d98836ad> (Architecture <behavior>) compiled.
+Entity <reinterpret_d51df7ac30> compiled.
+Entity <reinterpret_d51df7ac30> (Architecture <behavior>) compiled.
+Entity <conv_entity_494935ad4b> compiled.
+Entity <conv_entity_494935ad4b> (Architecture <structural>) compiled.
+Entity <adc_entity_ec20ac2b0a> compiled.
+Entity <adc_entity_ec20ac2b0a> (Architecture <structural>) compiled.
+Entity <addr_entity_8e41363cfc> compiled.
+Entity <addr_entity_8e41363cfc> (Architecture <structural>) compiled.
+Entity <calc_add_entity_aff9e82df6> compiled.
+Entity <calc_add_entity_aff9e82df6> (Architecture <structural>) compiled.
+Entity <bram_lsb_entity_a795a20a6f> compiled.
+Entity <bram_lsb_entity_a795a20a6f> (Architecture <structural>) compiled.
+Entity <freeze_cntr_entity_0b279bc5ff> compiled.
+Entity <freeze_cntr_entity_0b279bc5ff> (Architecture <structural>) compiled.
+Entity <posedge_entity_6c292e3de7> compiled.
+Entity <posedge_entity_6c292e3de7> (Architecture <structural>) compiled.
+Entity <snap64_entity_a287c47437> compiled.
+Entity <snap64_entity_a287c47437> (Architecture <structural>) compiled.
+Entity <interleaved_adc_64> compiled.
+Entity <interleaved_adc_64> (Architecture <structural>) compiled.
+Compiling vhdl file "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64_cw.vhd" in Library work.
+Entity <xlclockdriver> compiled.
+Entity <xlclockdriver> (Architecture <behavior>) compiled.
+Entity <default_clock_driver_interleaved_adc_64> compiled.
+Entity <default_clock_driver_interleaved_adc_64> (Architecture <structural>) compiled.
+Entity <interleaved_adc_64_cw> compiled.
+Entity <interleaved_adc_64_cw> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <interleaved_adc_64_cw> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <default_clock_driver_interleaved_adc_64> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <interleaved_adc_64> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlclockdriver> in library <work> (architecture <behavior>) with generics.
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+
+Analyzing hierarchy for entity <adc_entity_ec20ac2b0a> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <concat_15d98836ad> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_6293007044> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <reinterpret_d51df7ac30> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 31
+	new_msb = 31
+	x_width = 32
+	y_width = 1
+
+Analyzing hierarchy for entity <snap64_entity_a287c47437> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <conv_entity_494935ad4b> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <addr_entity_8e41363cfc> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <bram_lsb_entity_a795a20a6f> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <constant_6293007044> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 32
+	new_msb = 63
+	x_width = 64
+	y_width = 32
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 0
+	new_msb = 31
+	x_width = 64
+	y_width = 32
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 0
+	new_msb = 0
+	x_width = 32
+	y_width = 1
+
+Analyzing hierarchy for entity <freeze_cntr_entity_0b279bc5ff> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_80f90b97d0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <mux_d99e59b6d4> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <posedge_entity_6c292e3de7> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 15
+	init_value = "000000000000000"
+
+Analyzing hierarchy for entity <xlregister> in library <work> (architecture <behavior>) with generics.
+	d_width = 1
+	init_value = "0"
+
+Analyzing hierarchy for entity <reinterpret_9a13f6a2a0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 1
+	new_msb = 1
+	x_width = 32
+	y_width = 1
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 2
+	new_msb = 2
+	x_width = 32
+	y_width = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 0
+	init_value = "0000"
+	width = 1
+
+Analyzing hierarchy for entity <concat_83e473517e> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <inverter_e2b989a05e> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <reinterpret_4389dc89bf> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 7
+	new_msb = 7
+	x_width = 8
+	y_width = 1
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 0
+	new_msb = 6
+	x_width = 8
+	y_width = 7
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 15
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 32
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <calc_add_entity_aff9e82df6> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 15
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 15
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 32
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 32
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlconvert> in library <work> (architecture <behavior>) with generics.
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <xlcounter_free_interleaved_adc_64> in library <work> (architecture <behavior>) with generics.
+	core_name0 = "cntr_11_0_95ce35bbf89e0586"
+	op_arith = 1
+	op_width = 16
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 0
+	new_msb = 14
+	x_width = 16
+	y_width = 15
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 15
+	new_msb = 15
+	x_width = 16
+	y_width = 1
+
+Analyzing hierarchy for entity <xldelay> in library <work> (architecture <behavior>) with generics.
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 1
+
+Analyzing hierarchy for entity <inverter_e5b38cca3b> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <logical_80f90b97d0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "000000000000000"
+	latency = 1
+	width = 15
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 15
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 32
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <addsub_c13097e33e> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <concat_798afc5ec0> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <constant_963ed6358a> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 0
+	new_msb = 0
+	x_width = 15
+	y_width = 1
+
+Analyzing hierarchy for entity <xlslice> in library <work> (architecture <behavior>) with generics.
+	new_lsb = 1
+	new_msb = 14
+	x_width = 15
+	y_width = 14
+
+Analyzing hierarchy for entity <mux_e463a7ff8d> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 15
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 15
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 32
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 32
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <convert_func_call> in library <work> (architecture <behavior>) with generics.
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	overflow = 1
+	quantization = 1
+
+Analyzing hierarchy for entity <synth_reg> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "000000000000000"
+	width = 15
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "0"
+	width = 1
+
+Analyzing hierarchy for entity <synth_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "010"
+	latency = 1
+	width = 3
+
+Analyzing hierarchy for entity <srl17e> in library <work> (architecture <structural>) with generics.
+	latency = 1
+	width = 1
+
+Analyzing hierarchy for entity <single_reg_w_init> in library <work> (architecture <structural>) with generics.
+	init_index = 2
+	init_value = "010"
+	width = 3
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <interleaved_adc_64_cw> in library <work> (Architecture <structural>).
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_1_sg_x17>.
+    Set property "syn_keep = TRUE" for signal <persistentdff_inst_q>.
+    Set user-defined property "KEEP =  TRUE" for signal <persistentdff_inst_q> (previous value was "KEEP soft").
+WARNING:Xst:37 - Detected unknown constraint/property "preserve_signal". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "optimize_primitives = FALSE" for instance <persistentdff_inst> in unit <interleaved_adc_64_cw>.
+    Set property "syn_black_box = TRUE" for instance <persistentdff_inst> in unit <interleaved_adc_64_cw>.
+    Set property "syn_noprune = TRUE" for instance <persistentdff_inst> in unit <interleaved_adc_64_cw>.
+Entity <interleaved_adc_64_cw> analyzed. Unit <interleaved_adc_64_cw> generated.
+
+Analyzing Entity <default_clock_driver_interleaved_adc_64> in library <work> (Architecture <structural>).
+    Set property "syn_noprune = TRUE" for unit <default_clock_driver_interleaved_adc_64>.
+WARNING:Xst:37 - Detected unknown constraint/property "dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64_cw.vhd" line 378: Unconnected output port 'clr' of component 'xlclockdriver'.
+WARNING:Xst:753 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64_cw.vhd" line 378: Unconnected output port 'ce_logic' of component 'xlclockdriver'.
+Entity <default_clock_driver_interleaved_adc_64> analyzed. Unit <default_clock_driver_interleaved_adc_64> generated.
+
+Analyzing generic Entity <xlclockdriver> in library <work> (Architecture <behavior>).
+	log_2_period = 1
+	period = 1
+	pipeline_regs = 5
+	use_bufg = 0
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec>.
+    Set property "MAX_FANOUT = REDUCE" for signal <ce_vec_logic>.
+Entity <xlclockdriver> analyzed. Unit <xlclockdriver> generated.
+
+Analyzing generic Entity <synth_reg_w_init.1> in library <work> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.1> analyzed. Unit <synth_reg_w_init.1> generated.
+
+Analyzing generic Entity <single_reg_w_init.1> in library <work> (Architecture <structural>).
+	init_index = 0
+	init_value = "0000"
+	width = 1
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.1> analyzed. Unit <single_reg_w_init.1> generated.
+
+Analyzing Entity <interleaved_adc_64> in library <work> (Architecture <structural>).
+Entity <interleaved_adc_64> analyzed. Unit <interleaved_adc_64> generated.
+
+Analyzing Entity <adc_entity_ec20ac2b0a> in library <work> (Architecture <structural>).
+Entity <adc_entity_ec20ac2b0a> analyzed. Unit <adc_entity_ec20ac2b0a> generated.
+
+Analyzing Entity <conv_entity_494935ad4b> in library <work> (Architecture <structural>).
+Entity <conv_entity_494935ad4b> analyzed. Unit <conv_entity_494935ad4b> generated.
+
+Analyzing Entity <concat_83e473517e> in library <work> (Architecture <behavior>).
+Entity <concat_83e473517e> analyzed. Unit <concat_83e473517e> generated.
+
+Analyzing Entity <inverter_e2b989a05e> in library <work> (Architecture <behavior>).
+Entity <inverter_e2b989a05e> analyzed. Unit <inverter_e2b989a05e> generated.
+
+Analyzing Entity <reinterpret_4389dc89bf> in library <work> (Architecture <behavior>).
+Entity <reinterpret_4389dc89bf> analyzed. Unit <reinterpret_4389dc89bf> generated.
+
+Analyzing generic Entity <xlslice.7> in library <work> (Architecture <behavior>).
+	new_lsb = 7
+	new_msb = 7
+	x_width = 8
+	y_width = 1
+Entity <xlslice.7> analyzed. Unit <xlslice.7> generated.
+
+Analyzing generic Entity <xlslice.8> in library <work> (Architecture <behavior>).
+	new_lsb = 0
+	new_msb = 6
+	x_width = 8
+	y_width = 7
+Entity <xlslice.8> analyzed. Unit <xlslice.8> generated.
+
+Analyzing Entity <concat_15d98836ad> in library <work> (Architecture <behavior>).
+Entity <concat_15d98836ad> analyzed. Unit <concat_15d98836ad> generated.
+
+Analyzing Entity <constant_6293007044> in library <work> (Architecture <behavior>).
+Entity <constant_6293007044> analyzed. Unit <constant_6293007044> generated.
+
+Analyzing Entity <reinterpret_d51df7ac30> in library <work> (Architecture <behavior>).
+Entity <reinterpret_d51df7ac30> analyzed. Unit <reinterpret_d51df7ac30> generated.
+
+Analyzing generic Entity <xlslice.1> in library <work> (Architecture <behavior>).
+	new_lsb = 31
+	new_msb = 31
+	x_width = 32
+	y_width = 1
+Entity <xlslice.1> analyzed. Unit <xlslice.1> generated.
+
+Analyzing Entity <snap64_entity_a287c47437> in library <work> (Architecture <structural>).
+Entity <snap64_entity_a287c47437> analyzed. Unit <snap64_entity_a287c47437> generated.
+
+Analyzing Entity <addr_entity_8e41363cfc> in library <work> (Architecture <structural>).
+Entity <addr_entity_8e41363cfc> analyzed. Unit <addr_entity_8e41363cfc> generated.
+
+Analyzing generic Entity <xlconvert.1> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 15
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 32
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.1> analyzed. Unit <xlconvert.1> generated.
+
+Analyzing generic Entity <convert_func_call.1> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 15
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 32
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.1> analyzed. Unit <convert_func_call.1> generated.
+
+Analyzing Entity <bram_lsb_entity_a795a20a6f> in library <work> (Architecture <structural>).
+Entity <bram_lsb_entity_a795a20a6f> analyzed. Unit <bram_lsb_entity_a795a20a6f> generated.
+
+Analyzing Entity <calc_add_entity_aff9e82df6> in library <work> (Architecture <structural>).
+Entity <calc_add_entity_aff9e82df6> analyzed. Unit <calc_add_entity_aff9e82df6> generated.
+
+Analyzing Entity <addsub_c13097e33e> in library <work> (Architecture <behavior>).
+INFO:Xst:2679 - Register <op_mem_91_20(0)> in unit <addsub_c13097e33e> has a constant value of X during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <cout_mem_92_22(0)> in unit <addsub_c13097e33e> has a constant value of X during circuit operation. The register is replaced by logic.
+Entity <addsub_c13097e33e> analyzed. Unit <addsub_c13097e33e> generated.
+
+Analyzing generic Entity <synth_reg_w_init.4> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "010"
+	latency = 1
+	width = 3
+Entity <synth_reg_w_init.4> analyzed. Unit <synth_reg_w_init.4> generated.
+
+Analyzing generic Entity <single_reg_w_init.4> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "010"
+	width = 3
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1865: Instantiating black box module <fdse>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.4> analyzed. Unit <single_reg_w_init.4> generated.
+
+Analyzing Entity <concat_798afc5ec0> in library <work> (Architecture <behavior>).
+Entity <concat_798afc5ec0> analyzed. Unit <concat_798afc5ec0> generated.
+
+Analyzing Entity <constant_963ed6358a> in library <work> (Architecture <behavior>).
+Entity <constant_963ed6358a> analyzed. Unit <constant_963ed6358a> generated.
+
+Analyzing generic Entity <xlslice.11> in library <work> (Architecture <behavior>).
+	new_lsb = 0
+	new_msb = 0
+	x_width = 15
+	y_width = 1
+Entity <xlslice.11> analyzed. Unit <xlslice.11> generated.
+
+Analyzing generic Entity <xlslice.12> in library <work> (Architecture <behavior>).
+	new_lsb = 1
+	new_msb = 14
+	x_width = 15
+	y_width = 14
+Entity <xlslice.12> analyzed. Unit <xlslice.12> generated.
+
+Analyzing Entity <mux_e463a7ff8d> in library <work> (Architecture <behavior>).
+Entity <mux_e463a7ff8d> analyzed. Unit <mux_e463a7ff8d> generated.
+
+Analyzing generic Entity <xlconvert.2> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 15
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 15
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.2> analyzed. Unit <xlconvert.2> generated.
+
+Analyzing generic Entity <convert_func_call.2> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 15
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 15
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.2> analyzed. Unit <convert_func_call.2> generated.
+
+Analyzing generic Entity <xlconvert.3> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 32
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 32
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.3> analyzed. Unit <xlconvert.3> generated.
+
+Analyzing generic Entity <convert_func_call.3> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 32
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 32
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.3> analyzed. Unit <convert_func_call.3> generated.
+
+Analyzing generic Entity <xlconvert.4> in library <work> (Architecture <behavior>).
+	bool_conversion = 0
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	en_arith = 1
+	en_bin_pt = 0
+	en_width = 1
+	latency = 0
+	overflow = 1
+	quantization = 1
+Entity <xlconvert.4> analyzed. Unit <xlconvert.4> generated.
+
+Analyzing generic Entity <convert_func_call.4> in library <work> (Architecture <behavior>).
+	din_arith = 1
+	din_bin_pt = 0
+	din_width = 1
+	dout_arith = 1
+	dout_bin_pt = 0
+	dout_width = 1
+	overflow = 1
+	quantization = 1
+Entity <convert_func_call.4> analyzed. Unit <convert_func_call.4> generated.
+
+Analyzing generic Entity <xlslice.2> in library <work> (Architecture <behavior>).
+	new_lsb = 32
+	new_msb = 63
+	x_width = 64
+	y_width = 32
+Entity <xlslice.2> analyzed. Unit <xlslice.2> generated.
+
+Analyzing generic Entity <xlslice.3> in library <work> (Architecture <behavior>).
+	new_lsb = 0
+	new_msb = 31
+	x_width = 64
+	y_width = 32
+Entity <xlslice.3> analyzed. Unit <xlslice.3> generated.
+
+Analyzing generic Entity <xlslice.4> in library <work> (Architecture <behavior>).
+	new_lsb = 0
+	new_msb = 0
+	x_width = 32
+	y_width = 1
+Entity <xlslice.4> analyzed. Unit <xlslice.4> generated.
+
+Analyzing Entity <freeze_cntr_entity_0b279bc5ff> in library <work> (Architecture <structural>).
+WARNING:Xst:752 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 3489: Unconnected input port 'up' of component 'xlcounter_free_interleaved_adc_64' is tied to default value.
+WARNING:Xst:752 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 3489: Unconnected input port 'load' of component 'xlcounter_free_interleaved_adc_64' is tied to default value.
+WARNING:Xst:752 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 3489: Unconnected input port 'din' of component 'xlcounter_free_interleaved_adc_64' is tied to default value.
+Entity <freeze_cntr_entity_0b279bc5ff> analyzed. Unit <freeze_cntr_entity_0b279bc5ff> generated.
+
+Analyzing generic Entity <xlcounter_free_interleaved_adc_64> in library <work> (Architecture <behavior>).
+	core_name0 = "cntr_11_0_95ce35bbf89e0586"
+	op_arith = 1
+	op_width = 16
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "syn_black_box = TRUE" for instance <comp0.core_instance0> in unit <xlcounter_free_interleaved_adc_64>.
+Entity <xlcounter_free_interleaved_adc_64> analyzed. Unit <xlcounter_free_interleaved_adc_64> generated.
+
+Analyzing generic Entity <xlslice.9> in library <work> (Architecture <behavior>).
+	new_lsb = 0
+	new_msb = 14
+	x_width = 16
+	y_width = 15
+Entity <xlslice.9> analyzed. Unit <xlslice.9> generated.
+
+Analyzing generic Entity <xlslice.10> in library <work> (Architecture <behavior>).
+	new_lsb = 15
+	new_msb = 15
+	x_width = 16
+	y_width = 1
+Entity <xlslice.10> analyzed. Unit <xlslice.10> generated.
+
+Analyzing Entity <inverter_e5b38cca3b> in library <work> (Architecture <behavior>).
+Entity <inverter_e5b38cca3b> analyzed. Unit <inverter_e5b38cca3b> generated.
+
+Analyzing Entity <logical_80f90b97d0> in library <work> (Architecture <behavior>).
+Entity <logical_80f90b97d0> analyzed. Unit <logical_80f90b97d0> generated.
+
+Analyzing Entity <mux_d99e59b6d4> in library <work> (Architecture <behavior>).
+Entity <mux_d99e59b6d4> analyzed. Unit <mux_d99e59b6d4> generated.
+
+Analyzing Entity <posedge_entity_6c292e3de7> in library <work> (Architecture <structural>).
+Entity <posedge_entity_6c292e3de7> analyzed. Unit <posedge_entity_6c292e3de7> generated.
+
+Analyzing generic Entity <xldelay> in library <work> (Architecture <behavior>).
+	latency = 1
+	reg_retiming = 0
+	reset = 0
+	width = 1
+Entity <xldelay> analyzed. Unit <xldelay> generated.
+
+Analyzing generic Entity <synth_reg> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 1
+Entity <synth_reg> analyzed. Unit <synth_reg> generated.
+
+Analyzing generic Entity <srl17e> in library <work> (Architecture <structural>).
+	latency = 1
+	width = 1
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1633: Instantiating black box module <FDE>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <srl17e> analyzed. Unit <srl17e> generated.
+
+Analyzing generic Entity <xlregister.1> in library <work> (Architecture <behavior>).
+	d_width = 15
+	init_value = "000000000000000"
+Entity <xlregister.1> analyzed. Unit <xlregister.1> generated.
+
+Analyzing generic Entity <synth_reg_w_init.2> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "000000000000000"
+	latency = 1
+	width = 15
+Entity <synth_reg_w_init.2> analyzed. Unit <synth_reg_w_init.2> generated.
+
+Analyzing generic Entity <single_reg_w_init.2> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "000000000000000"
+	width = 15
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.2> analyzed. Unit <single_reg_w_init.2> generated.
+
+Analyzing generic Entity <xlregister.2> in library <work> (Architecture <behavior>).
+	d_width = 1
+	init_value = "0"
+Entity <xlregister.2> analyzed. Unit <xlregister.2> generated.
+
+Analyzing generic Entity <synth_reg_w_init.3> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0"
+	latency = 1
+	width = 1
+Entity <synth_reg_w_init.3> analyzed. Unit <synth_reg_w_init.3> generated.
+
+Analyzing generic Entity <single_reg_w_init.3> in library <work> (Architecture <structural>).
+	init_index = 2
+	init_value = "0"
+	width = 1
+WARNING:Xst:2211 - "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd" line 1855: Instantiating black box module <fdre>.
+WARNING:Xst:37 - Detected unknown constraint/property "fpga_dont_touch". This constraint/property is not supported by the current software release and will be ignored.
+Entity <single_reg_w_init.3> analyzed. Unit <single_reg_w_init.3> generated.
+
+Analyzing Entity <reinterpret_9a13f6a2a0> in library <work> (Architecture <behavior>).
+Entity <reinterpret_9a13f6a2a0> analyzed. Unit <reinterpret_9a13f6a2a0> generated.
+
+Analyzing generic Entity <xlslice.5> in library <work> (Architecture <behavior>).
+	new_lsb = 1
+	new_msb = 1
+	x_width = 32
+	y_width = 1
+Entity <xlslice.5> analyzed. Unit <xlslice.5> generated.
+
+Analyzing generic Entity <xlslice.6> in library <work> (Architecture <behavior>).
+	new_lsb = 2
+	new_msb = 2
+	x_width = 32
+	y_width = 1
+Entity <xlslice.6> analyzed. Unit <xlslice.6> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_e2b989a05e> has a constant value of X during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <op_mem_22_20(0)> in unit <inverter_e5b38cca3b> has a constant value of X during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <concat_15d98836ad>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <concat_15d98836ad> synthesized.
+
+
+Synthesizing Unit <constant_6293007044>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_6293007044> synthesized.
+
+
+Synthesizing Unit <reinterpret_d51df7ac30>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <reinterpret_d51df7ac30> synthesized.
+
+
+Synthesizing Unit <xlslice_1>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<30:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_1> synthesized.
+
+
+Synthesizing Unit <concat_83e473517e>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <concat_83e473517e> synthesized.
+
+
+Synthesizing Unit <inverter_e2b989a05e>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_e2b989a05e> synthesized.
+
+
+Synthesizing Unit <reinterpret_4389dc89bf>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <reinterpret_4389dc89bf> synthesized.
+
+
+Synthesizing Unit <xlslice_7>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<6:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_7> synthesized.
+
+
+Synthesizing Unit <xlslice_8>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_8> synthesized.
+
+
+Synthesizing Unit <xlslice_2>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<31:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_2> synthesized.
+
+
+Synthesizing Unit <xlslice_3>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<63:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_3> synthesized.
+
+
+Synthesizing Unit <xlslice_4>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<31:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_4> synthesized.
+
+
+Synthesizing Unit <inverter_e5b38cca3b>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <op_mem_22_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_22_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <inverter_e5b38cca3b> synthesized.
+
+
+Synthesizing Unit <logical_80f90b97d0>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <logical_80f90b97d0> synthesized.
+
+
+Synthesizing Unit <mux_d99e59b6d4>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <mux_d99e59b6d4> synthesized.
+
+
+Synthesizing Unit <reinterpret_9a13f6a2a0>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <reinterpret_9a13f6a2a0> synthesized.
+
+
+Synthesizing Unit <xlslice_5>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<31:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_5> synthesized.
+
+
+Synthesizing Unit <xlslice_6>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<31:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_6> synthesized.
+
+
+Synthesizing Unit <convert_func_call_1>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <convert_func_call_1> synthesized.
+
+
+Synthesizing Unit <concat_798afc5ec0>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <concat_798afc5ec0> synthesized.
+
+
+Synthesizing Unit <constant_963ed6358a>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <constant_963ed6358a> synthesized.
+
+
+Synthesizing Unit <xlslice_11>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<14:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_11> synthesized.
+
+
+Synthesizing Unit <xlslice_12>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_12> synthesized.
+
+
+Synthesizing Unit <mux_e463a7ff8d>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <mux_e463a7ff8d> synthesized.
+
+
+Synthesizing Unit <convert_func_call_2>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <convert_func_call_2> synthesized.
+
+
+Synthesizing Unit <convert_func_call_3>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <convert_func_call_3> synthesized.
+
+
+Synthesizing Unit <convert_func_call_4>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <convert_func_call_4> synthesized.
+
+
+Synthesizing Unit <xlslice_9>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_9> synthesized.
+
+
+Synthesizing Unit <xlslice_10>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <x<14:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlslice_10> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_1>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <single_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <conv_entity_494935ad4b>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <conv_entity_494935ad4b> synthesized.
+
+
+Synthesizing Unit <xlconvert_1>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_1> synthesized.
+
+
+Synthesizing Unit <xlconvert_2>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_2> synthesized.
+
+
+Synthesizing Unit <xlconvert_3>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_3> synthesized.
+
+
+Synthesizing Unit <xlconvert_4>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <internal_ce> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xlconvert_4> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_4>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <single_reg_w_init_4> synthesized.
+
+
+Synthesizing Unit <xlcounter_free_interleaved_adc_64>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <load<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <up<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xlcounter_free_interleaved_adc_64> synthesized.
+
+
+Synthesizing Unit <srl17e>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <srl17e> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_2>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <single_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <single_reg_w_init_3>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <single_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_1>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <synth_reg_w_init_1> synthesized.
+
+
+Synthesizing Unit <adc_entity_ec20ac2b0a>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <adc_entity_ec20ac2b0a> synthesized.
+
+
+Synthesizing Unit <addr_entity_8e41363cfc>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <addr_entity_8e41363cfc> synthesized.
+
+
+Synthesizing Unit <freeze_cntr_entity_0b279bc5ff>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <freeze_cntr_entity_0b279bc5ff> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_4>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <synth_reg_w_init_4> synthesized.
+
+
+Synthesizing Unit <synth_reg>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <synth_reg> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_2>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <synth_reg_w_init_2> synthesized.
+
+
+Synthesizing Unit <synth_reg_w_init_3>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <synth_reg_w_init_3> synthesized.
+
+
+Synthesizing Unit <xlclockdriver>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64_cw.vhd".
+WARNING:Xst:1780 - Signal <internal_ce_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <internal_ce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec_logic> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ce_vec> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found T flip-flop for signal <clk_num<0>>.
+    Summary:
+	inferred   1 T-type flip-flop(s).
+Unit <xlclockdriver> synthesized.
+
+
+Synthesizing Unit <xlregister_1>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <xlregister_1> synthesized.
+
+
+Synthesizing Unit <xlregister_2>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <xlregister_2> synthesized.
+
+
+Synthesizing Unit <addsub_c13097e33e>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:646 - Signal <prev_mode_93_22> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <op_mem_91_20_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <op_mem_91_20_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <internal_s_71_5_addsub<2:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cout_mem_92_22_front_din> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <cout_mem_92_22_back<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit subtractor for signal <internal_s_71_5_addsub>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addsub_c13097e33e> synthesized.
+
+
+Synthesizing Unit <xldelay>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xldelay> synthesized.
+
+
+Synthesizing Unit <default_clock_driver_interleaved_adc_64>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64_cw.vhd".
+Unit <default_clock_driver_interleaved_adc_64> synthesized.
+
+
+Synthesizing Unit <posedge_entity_6c292e3de7>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <posedge_entity_6c292e3de7> synthesized.
+
+
+Synthesizing Unit <calc_add_entity_aff9e82df6>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <calc_add_entity_aff9e82df6> synthesized.
+
+
+Synthesizing Unit <bram_lsb_entity_a795a20a6f>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <bram_lsb_entity_a795a20a6f> synthesized.
+
+
+Synthesizing Unit <snap64_entity_a287c47437>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+Unit <snap64_entity_a287c47437> synthesized.
+
+
+Synthesizing Unit <interleaved_adc_64>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64.vhd".
+WARNING:Xst:646 - Signal <interleaved_adc_64_snap64_bram_msb_data_out_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_snap64_bram_lsb_data_out_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_sync3_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_sync2_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_sync1_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_sync0_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_outofrangeq1_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_outofrangeq0_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_outofrangei1_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_outofrangei0_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <interleaved_adc_64_adc_user_data_valid_net> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <interleaved_adc_64> synthesized.
+
+
+Synthesizing Unit <interleaved_adc_64_cw>.
+    Related source file is "/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/sysgen/synth_model/interleaved_adc_64_cw.vhd".
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <interleaved_adc_64_cw> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 3-bit subtractor                                      : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <xlpersistentdff.ngc>.
+Reading core <cntr_11_0_95ce35bbf89e0586.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <xlpersistentdff> for timing and area information for instance <persistentdff_inst>.
+Loading core <cntr_11_0_95ce35bbf89e0586> for timing and area information for instance <comp0.core_instance0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 1-bit subtractor                                      : 2
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <calc_add_entity_aff9e82df6>: instances <const>, <manipulate> of unit <constant_963ed6358a> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <snap64_entity_a287c47437>: instances <constant1>, <constant2> of unit <constant_6293007044> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <snap64_entity_a287c47437>: instances <constant1>, <constant_x0> of unit <constant_6293007044> are equivalent, second instance is removed
+
+Optimizing unit <interleaved_adc_64_cw> ...
+
+Optimizing unit <single_reg_w_init_2> ...
+
+Optimizing unit <snap64_entity_a287c47437> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : interleaved_adc_64_cw.ngc
+Output Format                      : NGC
+Optimization Goal                  : SPEED
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 331
+
+Cell Usage :
+# BELS                             : 14
+#      GND                         : 1
+#      INV                         : 9
+#      LUT2                        : 2
+#      LUT4                        : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 25
+#      FD                          : 1
+#      FDE                         : 1
+#      FDRE                        : 21
+#      FDSE                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vsx95tff1136-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              25  out of  58880     0%  
+ Number of Slice LUTs:                   12  out of  58880     0%  
+    Number used as Logic:                12  out of  58880     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     37
+   Number with an unused Flip Flop:      12  out of     37    32%  
+   Number with an unused LUT:            25  out of     37    67%  
+   Number of fully used LUT-FF pairs:     0  out of     37     0%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                         331
+ Number of bonded IOBs:                   0  out of    640     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+clk                                | NONE(persistentdff_inst/q)| 41    |
+-----------------------------------+---------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.143ns (Maximum Frequency: 466.636MHz)
+   Minimum input arrival time before clock: 1.456ns
+   Maximum output required time after clock: 1.146ns
+   Maximum combinational path delay: 0.238ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.143ns (frequency: 466.636MHz)
+  Total number of paths / destination ports: 231 / 96
+-------------------------------------------------------------------------
+Delay:               2.143ns (Levels of Logic = 17)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            2   0.471   0.341  sec_inst (sec_net)
+     SEC:in->out           1   0.238   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.372   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.026   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.357   0.000  sec_inst (sec_net)
+     SEC:in                   -0.018          sec_inst
+    ----------------------------------------
+    Total                      2.143ns (1.802ns logic, 0.341ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 20 / 18
+-------------------------------------------------------------------------
+Offset:              1.456ns (Levels of Logic = 1)
+  Source:            interleaved_adc_64_trigger_user_data_out(31) (PAD)
+  Destination:       interleaved_adc_64_x0/snap64_a287c47437/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp (FF)
+  Destination Clock: clk rising
+
+  Data Path: interleaved_adc_64_trigger_user_data_out(31) to interleaved_adc_64_x0/snap64_a287c47437/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O            1   0.094   0.336  interleaved_adc_64_x0/snap64_a287c47437/register_x0/internal_clr1 (interleaved_adc_64_x0/snap64_a287c47437/register_x0/internal_clr)
+     FDRE:R                    0.573          interleaved_adc_64_x0/snap64_a287c47437/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp
+    ----------------------------------------
+    Total                      1.456ns (1.120ns logic, 0.336ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 49 / 47
+-------------------------------------------------------------------------
+Offset:              1.146ns (Levels of Logic = 2)
+  Source:            sec_inst (FF)
+  Destination:       interleaved_adc_64_snap64_bram_msb_we (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sec_inst to interleaved_adc_64_snap64_bram_msb_we
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            2   0.471   0.581  sec_inst (sec_net)
+     end scope: 'blk00000001'
+     end scope: 'interleaved_adc_64_x0/snap64_a287c47437/freeze_cntr_0b279bc5ff/counter3/comp0.core_instance0'
+     LUT2:I0->O           15   0.094   0.000  interleaved_adc_64_x0/snap64_a287c47437/freeze_cntr_0b279bc5ff/logical1/fully_2_1_bit1 (interleaved_adc_64_snap64_bram_lsb_we)
+    ----------------------------------------
+    Total                      1.146ns (0.565ns logic, 0.581ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Delay:               0.238ns (Levels of Logic = 1)
+  Source:            interleaved_adc_64_adc_user_dataq2(7) (PAD)
+  Destination:       interleaved_adc_64_snap64_bram_lsb_data_in(31) (PAD)
+
+  Data Path: interleaved_adc_64_adc_user_dataq2(7) to interleaved_adc_64_snap64_bram_lsb_data_in(31)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O              0   0.238   0.000  interleaved_adc_64_x0/adc_ec20ac2b0a/conv6_d9f21717fb/inverter/internal_ip_12_1_bitnot_0_not00001_INV_0 (interleaved_adc_64_snap64_bram_lsb_data_in(31))
+    ----------------------------------------
+    Total                      0.238ns (0.238ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.09 secs
+ 
+--> 
+
+
+Total memory usage is 651632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  149 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

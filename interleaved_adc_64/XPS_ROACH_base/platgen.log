@@ -1,0 +1,387 @@
+Release 14.6 - platgen Xilinx EDK 14.6 Build EDK_P.68d
+ (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc5vsx95tff1136-1 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst system.mhs 
+
+WARNING:EDK - INFO:Security:71 - If a license for part 'xc5vsx95t' is available,
+   it will be possible to use 'XPS_TDP' instead of 'XPS'.
+   WARNING:Security:42 - Your software subscription period has lapsed. Your
+   current version of Xilinx tools will continue to function, but you no longer
+   qualify for Xilinx software updates or new releases.
+
+
+Parse
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs ...
+
+Read MPD definitions ...
+WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
+   interleaved_adc_64_snap64_bram_lsb - Superseded core for architecture
+   'virtex5sx' -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 345 
+WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
+   interleaved_adc_64_snap64_bram_msb - Superseded core for architecture
+   'virtex5sx' -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 376 
+WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
+   interleaved_adc_64_snap64_bram_lsb - Superseded core for architecture
+   'virtex5sx' -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 345 
+WARNING:EDK:4088 - IPNAME: opb_bram_if_cntlr, INSTANCE:
+   interleaved_adc_64_snap64_bram_msb - Superseded core for architecture
+   'virtex5sx' -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 376 
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   interleaved_adc_64_snap64_bram_lsb_ramif:bram_clk. Clock DRCs will not be
+   performed on this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   interleaved_adc_64_snap64_bram_msb_ramif:bram_clk. Clock DRCs will not be
+   performed on this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   infrastructure_inst:epb_clk. Clock DRCs will not be performed on this core
+   and cores connected to it. 
+INFO:EDK:1039 - Did not update the value for parameter:
+   interleaved_adc_64_snap64_bram_lsb:c_opb_clk_period_ps. Top-level frequency
+   could not be propagated to this IP. Please make sure that you have specified
+   the frequency of the top-level clock port, and that the clocks are properly
+   connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   interleaved_adc_64_snap64_bram_msb:c_opb_clk_period_ps. Top-level frequency
+   could not be propagated to this IP. Please make sure that you have specified
+   the frequency of the top-level clock port, and that the clocks are properly
+   connected.
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor epb_opb_bridge_inst
+  (0000000000-0x0000ffff) sys_block_inst	opb0
+  (0x00020000-0x0002ffff) opb_adccontroller_0	opb0
+  (0x01000000-0x010000ff) interleaved_adc_64_snap64_addr	opb0
+  (0x01020000-0x0103ffff) interleaved_adc_64_snap64_bram_lsb	opb0
+  (0x01040000-0x0105ffff) interleaved_adc_64_snap64_bram_msb	opb0
+  (0x01060000-0x010600ff) interleaved_adc_64_snap64_ctrl	opb0
+  (0x01060100-0x010601ff) interleaved_adc_64_trigger	opb0
+INFO:EDK:4130 - IPNAME: opb_v20, INSTANCE:opb0 - tool is overriding PARAMETER
+   C_NUM_MASTERS value to 1 -
+   /usr/local/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_1
+   0_c/data/opb_v20_v2_1_0.mpd line 74 
+INFO:EDK:4130 - IPNAME: opb_v20, INSTANCE:opb0 - tool is overriding PARAMETER
+   C_NUM_SLAVES value to 7 -
+   /usr/local/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/opb_v20_v1_1
+   0_c/data/opb_v20_v2_1_0.mpd line 75 
+INFO:EDK:4130 - IPNAME: bram_block,
+   INSTANCE:interleaved_adc_64_snap64_bram_lsb_ramblk - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x20000 -
+   /usr/local/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v
+   1_00_a/data/bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: bram_block,
+   INSTANCE:interleaved_adc_64_snap64_bram_msb_ramblk - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x20000 -
+   /usr/local/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v
+   1_00_a/data/bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: opb_v20, INSTANCE: opb0 - 1 master(s) : 7 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4181 - PORT: sys_clk, CONNECTOR: sys_clk - floating connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 61 
+WARNING:EDK:4181 - PORT: sys_clk90, CONNECTOR: sys_clk90 - floating connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 62 
+WARNING:EDK:4181 - PORT: sys_clk180, CONNECTOR: sys_clk180 - floating connection
+   -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 63 
+WARNING:EDK:4181 - PORT: sys_clk270, CONNECTOR: sys_clk270 - floating connection
+   -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 64 
+WARNING:EDK:4181 - PORT: sys_clk_lock, CONNECTOR: sys_clk_lock - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 65 
+WARNING:EDK:4181 - PORT: sys_clk2x, CONNECTOR: sys_clk2x - floating connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 66 
+WARNING:EDK:4181 - PORT: sys_clk2x90, CONNECTOR: sys_clk2x90 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 67 
+WARNING:EDK:4181 - PORT: sys_clk2x180, CONNECTOR: sys_clk2x180 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 68 
+WARNING:EDK:4181 - PORT: sys_clk2x270, CONNECTOR: sys_clk2x270 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 69 
+WARNING:EDK:4181 - PORT: dly_clk, CONNECTOR: dly_clk - floating connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 70 
+WARNING:EDK:4181 - PORT: aux0_clk, CONNECTOR: aux0_clk - floating connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 71 
+WARNING:EDK:4181 - PORT: aux0_clk90, CONNECTOR: aux0_clk90 - floating connection
+   -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 72 
+WARNING:EDK:4181 - PORT: aux0_clk180, CONNECTOR: aux0_clk180 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 73 
+WARNING:EDK:4181 - PORT: aux0_clk270, CONNECTOR: aux0_clk270 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 74 
+WARNING:EDK:4181 - PORT: aux1_clk, CONNECTOR: aux1_clk - floating connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 75 
+WARNING:EDK:4181 - PORT: aux1_clk90, CONNECTOR: aux1_clk90 - floating connection
+   -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 76 
+WARNING:EDK:4181 - PORT: aux1_clk180, CONNECTOR: aux1_clk180 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 77 
+WARNING:EDK:4181 - PORT: aux1_clk270, CONNECTOR: aux1_clk270 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 78 
+WARNING:EDK:4181 - PORT: aux0_clk2x, CONNECTOR: aux0_clk2x - floating connection
+   -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 79 
+WARNING:EDK:4181 - PORT: aux0_clk2x90, CONNECTOR: aux0_clk2x90 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 80 
+WARNING:EDK:4181 - PORT: aux0_clk2x180, CONNECTOR: aux0_clk2x180 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 81 
+WARNING:EDK:4181 - PORT: aux0_clk2x270, CONNECTOR: aux0_clk2x270 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 82 
+WARNING:EDK:4181 - PORT: idelay_rdy, CONNECTOR: idelay_rdy - floating connection
+   -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 85 
+WARNING:EDK:4181 - PORT: op_reset_o, CONNECTOR: sys_reset - floating connection
+   -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 96 
+WARNING:EDK:4181 - PORT: soft_reset, CONNECTOR: soft_reset - floating connection
+   -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 167 
+WARNING:EDK:4181 - PORT: ctrl_clk90_out, CONNECTOR: adc0_clk90 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 284 
+WARNING:EDK:4181 - PORT: ctrl_clk180_out, CONNECTOR: adc0_clk180 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 288 
+WARNING:EDK:4181 - PORT: ctrl_clk270_out, CONNECTOR: adc0_clk270 - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 289 
+WARNING:EDK:4181 - PORT: ctrl_dcm_locked, CONNECTOR: adc0_dcm_locked - floating
+   connection -
+   /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/s
+   ystem.mhs line 285 
+
+Performing Clock DRCs...
+INFO:EDK:4060 - INSTANCE: interleaved_adc_64_snap64_bram_lsb, PARAMETER:
+   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
+   Top-level frequency could not be propagated to this IP. Please make sure that
+   you have specified the frequency of the top-level clock port, and that the
+   clocks are properly connected.
+INFO:EDK:4060 - INSTANCE: interleaved_adc_64_snap64_bram_msb, PARAMETER:
+   c_opb_clk_period_ps - Did not implement clock DRCs for the parameter.
+   Top-level frequency could not be propagated to this IP. Please make sure that
+   you have specified the frequency of the top-level clock port, and that the
+   clocks are properly connected.
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:interleaved_adc_64 INSTANCE:interleaved_adc_64_xsg_core_config -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 201 - Copying (BBD-specified) netlist files.
+IPNAME:adc_interface INSTANCE:interleaved_adc_64_adc -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 243 - Copying (BBD-specified) netlist files.
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:interleaved_adc_64_snap64_bram_lsb_ramblk -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 338 - elaborating IP
+IPNAME:bram_block INSTANCE:interleaved_adc_64_snap64_bram_msb_ramblk -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 369 - elaborating IP
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:infrastructure_inst -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 48 - Running XST synthesis
+INSTANCE:reset_block_inst -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 89 - Running XST synthesis
+INSTANCE:opb0 -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 99 - Running XST synthesis
+INSTANCE:epb_opb_bridge_inst -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 108 - Running XST synthesis
+INSTANCE:epb_infrastructure_inst -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 127 - Running XST synthesis
+INSTANCE:sys_block_inst -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 152 - Running XST synthesis
+INSTANCE:opb_adccontroller_0 -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 174 - Running XST synthesis
+INSTANCE:interleaved_adc_64_xsg_core_config -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 201 - Running XST synthesis
+INSTANCE:interleaved_adc_64_adc -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 243 - Running XST synthesis
+INSTANCE:interleaved_adc_64_snap64_addr -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 314 - Running XST synthesis
+INSTANCE:interleaved_adc_64_snap64_bram_lsb_ramif -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 326 - Running XST synthesis
+INSTANCE:interleaved_adc_64_snap64_bram_lsb_ramblk -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 338 - Running XST synthesis
+INSTANCE:interleaved_adc_64_snap64_bram_lsb -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 345 - Running XST synthesis
+INSTANCE:interleaved_adc_64_snap64_bram_msb_ramif -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 357 - Running XST synthesis
+INSTANCE:interleaved_adc_64_snap64_bram_msb_ramblk -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 369 - Running XST synthesis
+INSTANCE:interleaved_adc_64_snap64_bram_msb -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 376 - Running XST synthesis
+INSTANCE:interleaved_adc_64_snap64_ctrl -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 388 - Running XST synthesis
+INSTANCE:interleaved_adc_64_trigger -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 400 - Running XST synthesis
+
+Running NGCBUILD ...
+IPNAME:system_interleaved_adc_64_xsg_core_config_wrapper
+INSTANCE:interleaved_adc_64_xsg_core_config -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 201 - Running NGCBUILD
+IPNAME:system_interleaved_adc_64_adc_wrapper INSTANCE:interleaved_adc_64_adc -
+/afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/syst
+em.mhs line 243 - Running NGCBUILD
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 207.00 seconds

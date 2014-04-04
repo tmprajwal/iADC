@@ -1,0 +1,2 @@
+VHDL interleaved_adc_64_snap64_bram_lsb_ramblk_elaborate_v1_00_a /afs/lns.mit.edu/user/prajwal/casper/iADC/interleaved_adc_64/XPS_ROACH_base/hdl/elaborate/interleaved_adc_64_snap64_bram_lsb_ramblk_elaborate_v1_00_a/hdl/vhdl/interleaved_adc_64_snap64_bram_lsb_ramblk_elaborate.vhd
+vhdl work ../hdl/system_interleaved_adc_64_snap64_bram_lsb_ramblk_wrapper.vhd
